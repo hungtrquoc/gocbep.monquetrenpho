@@ -12,3 +12,17 @@ body {
   background-color: #fff8ec;
   color: #4a2e1f;
 }
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff;
+  }
+  article {
+    max-width: 100% !important;
+  }
+}

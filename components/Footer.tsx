@@ -9,6 +9,9 @@ export default function Footer() {
         <div>
           <p className="font-display font-semibold text-coffee">Góc Bếp – Món quê trên phố</p>
           <p>© {year} Góc Bếp. Mọi video thuộc bản quyền của kênh YouTube Góc Bếp.</p>
+          <p className="mt-1 text-xs text-coffee/45">
+            Một số liên kết sản phẩm là liên kết affiliate.
+          </p>
         </div>
         <div className="flex flex-wrap gap-x-4 gap-y-2">
           <Link href="/gioi-thieu" className="hover:text-chili">

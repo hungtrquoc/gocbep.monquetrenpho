@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { CATEGORIES, getPublishedRecipes, type RecipeCategory } from "@/lib/recipes";
+import { CATEGORIES, CATEGORY_SLUGS, getPublishedRecipes } from "@/lib/recipes";
 import RecipeCard from "@/components/RecipeCard";
 import AdSlot from "@/components/AdSlot";
 
@@ -9,26 +9,11 @@ export const metadata: Metadata = {
   description: "Toàn bộ công thức nấu ăn chi tiết từ kênh Góc Bếp.",
 };
 
-function isRecipeCategory(value: string | undefined): value is RecipeCategory {
-  return !!value && (CATEGORIES as readonly string[]).includes(value);
-}
-
-export default function RecipesPage({
-  searchParams,
-}: {
-  searchParams: { category?: string };
-}) {
-  const allRecipes = getPublishedRecipes();
-  const activeCategory = isRecipeCategory(searchParams.category)
-    ? searchParams.category
-    : undefined;
-
-  const recipes = activeCategory
-    ? allRecipes.filter((r) => r.category === activeCategory)
-    : allRecipes;
+export default function RecipesPage() {
+  const recipes = getPublishedRecipes();
 
   const usedCategories = CATEGORIES.filter((c) =>
-    allRecipes.some((r) => r.category === c)
+    recipes.some((r) => r.category === c)
   );
 
   return (
@@ -42,25 +27,11 @@ export default function RecipesPage({
 
       {usedCategories.length > 1 && (
         <div className="mb-8 flex flex-wrap justify-center gap-2">
-          <Link
-            href="/cong-thuc"
-            className={`rounded-full px-4 py-1.5 text-sm font-medium transition ${
-              !activeCategory
-                ? "bg-chili text-white"
-                : "bg-white text-coffee/70 hover:bg-turmeric/15"
-            }`}
-          >
-            Tất cả
-          </Link>
           {usedCategories.map((category) => (
             <Link
               key={category}
-              href={`/cong-thuc?category=${encodeURIComponent(category)}`}
-              className={`rounded-full px-4 py-1.5 text-sm font-medium transition ${
-                activeCategory === category
-                  ? "bg-chili text-white"
-                  : "bg-white text-coffee/70 hover:bg-turmeric/15"
-              }`}
+              href={`/danh-muc/${CATEGORY_SLUGS[category]}`}
+              className="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-coffee/70 transition hover:bg-turmeric/15"
             >
               {category}
             </Link>

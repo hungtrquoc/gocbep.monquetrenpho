@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getLatestVideos, CHANNEL_URL } from "@/lib/youtube";
-import { getPublishedRecipes } from "@/lib/recipes";
+import { CATEGORIES, CATEGORY_SLUGS, getPublishedRecipes } from "@/lib/recipes";
 import { getAllProducts } from "@/lib/products";
 import VideoCard from "@/components/VideoCard";
 import RecipeCard from "@/components/RecipeCard";
@@ -11,8 +11,12 @@ import AdSlot from "@/components/AdSlot";
 export default async function HomePage() {
   const videos = await getLatestVideos();
   const featuredVideos = videos.slice(0, 3);
-  const featuredRecipes = getPublishedRecipes().slice(0, 6);
+  const publishedRecipes = getPublishedRecipes();
+  const featuredRecipes = publishedRecipes.slice(0, 6);
   const featuredProducts = getAllProducts().slice(0, 3);
+  const usedCategories = CATEGORIES.filter((c) =>
+    publishedRecipes.some((r) => r.category === c)
+  );
 
   return (
     <div>
@@ -59,6 +63,23 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Danh mục món ăn */}
+      {usedCategories.length > 1 && (
+        <section className="mx-auto max-w-5xl px-4 pt-10">
+          <div className="flex flex-wrap justify-center gap-2">
+            {usedCategories.map((category) => (
+              <Link
+                key={category}
+                href={`/danh-muc/${CATEGORY_SLUGS[category]}`}
+                className="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-coffee/70 shadow-sm transition hover:bg-turmeric/15"
+              >
+                {category}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Công thức nổi bật */}
       <section className="mx-auto max-w-5xl px-4 py-14">

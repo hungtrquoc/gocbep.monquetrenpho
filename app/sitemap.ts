@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getPublishedRecipes } from "@/lib/recipes";
+import { CATEGORIES, CATEGORY_SLUGS, getPublishedRecipes } from "@/lib/recipes";
 
 const SITE_URL = "https://gocbepmonquetrenpho.vercel.app";
 
@@ -21,5 +21,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...recipeRoutes];
+  const categoryRoutes: MetadataRoute.Sitemap = CATEGORIES.map((c) => ({
+    url: `${SITE_URL}/danh-muc/${CATEGORY_SLUGS[c]}`,
+    changeFrequency: "weekly",
+    priority: 0.75,
+  }));
+
+  return [...staticRoutes, ...recipeRoutes, ...categoryRoutes];
 }

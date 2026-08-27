@@ -6,9 +6,12 @@ import {
   getRecipeBySlug,
   getAllRecipeSlugs,
   getRelatedRecipes,
+  CATEGORY_SLUGS,
 } from "@/lib/recipes";
 import AdSlot from "@/components/AdSlot";
 import RecipeCard from "@/components/RecipeCard";
+import RecipeIngredients from "@/components/RecipeIngredients";
+import PrintButton from "@/components/PrintButton";
 
 export function generateStaticParams() {
   // Tạo trang tĩnh cho TẤT CẢ công thức (kể cả bản nháp) để anh xem trước
@@ -92,19 +95,21 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
       />
 
       {!recipe.published && (
-        <div className="mb-6 rounded-lg border border-chili/40 bg-chili/10 px-4 py-3 text-sm text-chili">
+        <div className="no-print mb-6 rounded-lg border border-chili/40 bg-chili/10 px-4 py-3 text-sm text-chili">
           <strong>Bản nháp — chưa công khai.</strong> Trang này chỉ xem được qua
           link trực tiếp để duyệt nội dung, chưa xuất hiện ở trang danh sách
           "Công thức".
         </div>
       )}
 
-      <nav className="mb-3 text-xs text-coffee/50">
+      <nav className="no-print mb-3 text-xs text-coffee/50">
         <Link href="/cong-thuc" className="hover:text-chili hover:underline">
           Công thức
         </Link>
         <span className="mx-1.5">/</span>
-        <span>{recipe.category}</span>
+        <Link href={`/danh-muc/${CATEGORY_SLUGS[recipe.category]}`} className="hover:text-chili hover:underline">
+          {recipe.category}
+        </Link>
       </nav>
 
       <span className="inline-block rounded-full bg-turmeric/15 px-3 py-1 text-xs font-semibold text-chili">
@@ -116,14 +121,29 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
       </h1>
       <p className="mt-3 text-coffee/70">{recipe.excerpt}</p>
 
-      <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-2xl bg-turmeric/10">
-        <Image src={recipe.coverImage} alt={recipe.title} fill className="object-cover" />
+      <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-2xl border border-turmeric/20 bg-white/70 px-5 py-4 text-sm text-coffee/80">
+        {recipe.servings && (
+          <span className="flex items-center gap-1.5">
+            <span aria-hidden>🍽️</span> Khẩu phần: <strong className="text-coffee">{recipe.servings}</strong>
+          </span>
+        )}
+        {recipe.prepTime && (
+          <span className="flex items-center gap-1.5">
+            <span aria-hidden>⏱️</span> Chuẩn bị: <strong className="text-coffee">{recipe.prepTime}</strong>
+          </span>
+        )}
+        {recipe.cookTime && (
+          <span className="flex items-center gap-1.5">
+            <span aria-hidden>🔥</span> Nấu: <strong className="text-coffee">{recipe.cookTime}</strong>
+          </span>
+        )}
+        <div className="ml-auto">
+          <PrintButton />
+        </div>
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-4 text-sm text-coffee/70">
-        {recipe.servings && <span>🍽️ Khẩu phần: {recipe.servings}</span>}
-        {recipe.prepTime && <span>⏱️ Chuẩn bị: {recipe.prepTime}</span>}
-        {recipe.cookTime && <span>🔥 Nấu: {recipe.cookTime}</span>}
+      <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-2xl bg-turmeric/10">
+        <Image src={recipe.coverImage} alt={recipe.title} fill className="object-cover" />
       </div>
 
       {recipe.videoId && (
@@ -141,14 +161,7 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
       <div className="mt-10 grid gap-10 sm:grid-cols-[1fr_1.6fr]">
         <section>
           <h2 className="font-display text-xl font-semibold text-coffee">Nguyên liệu</h2>
-          <ul className="mt-3 space-y-2 text-coffee/90">
-            {recipe.ingredients.map((item, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <span className="mt-1 text-turmeric">●</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+          <RecipeIngredients ingredients={recipe.ingredients} />
         </section>
 
         <section>
@@ -182,12 +195,12 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
         </section>
       )}
 
-      <div className="mt-10">
+      <div className="no-print mt-10">
         <AdSlot slot="recipe-detail" />
       </div>
 
       {related.length > 0 && (
-        <section className="mt-12 border-t border-turmeric/20 pt-8">
+        <section className="no-print mt-12 border-t border-turmeric/20 pt-8">
           <h2 className="font-display text-xl font-semibold text-coffee">Món liên quan</h2>
           <div className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {related.map((r) => (
@@ -197,7 +210,7 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
         </section>
       )}
 
-      <div className="mt-10 border-t border-turmeric/20 pt-6 text-sm">
+      <div className="no-print mt-10 border-t border-turmeric/20 pt-6 text-sm">
         <Link href="/cong-thuc" className="font-semibold text-chili hover:underline">
           ← Xem thêm công thức khác
         </Link>
