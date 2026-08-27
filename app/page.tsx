@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getLatestVideos, CHANNEL_URL } from "@/lib/youtube";
 import VideoCard from "@/components/VideoCard";
+import AdSlot from "@/components/AdSlot";
 
 export default async function HomePage() {
   const videos = await getLatestVideos();
@@ -83,6 +84,10 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
+
+      <div className="mx-auto max-w-5xl px-4">
+        <AdSlot slot="home-mid" />
+      </div>
 
       {/* Intro strip */}
       <section className="border-t border-turmeric/20 bg-white/60">

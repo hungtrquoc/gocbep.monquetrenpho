@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getLatestVideos, CHANNEL_URL } from "@/lib/youtube";
 import VideoCard from "@/components/VideoCard";
+import AdSlot from "@/components/AdSlot";
 
 export const metadata: Metadata = {
   title: "Video",
@@ -34,6 +35,10 @@ export default async function VideosPage() {
           trực tiếp.
         </p>
       )}
+
+      <div className="mt-10">
+        <AdSlot slot="videos-list" />
+      </div>
     </div>
   );
 }

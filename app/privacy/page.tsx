@@ -10,7 +10,7 @@ export default function PrivacyPage() {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
-  }).format(new Date("2026-08-26"));
+  }).format(new Date("2026-08-27"));
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-14">
@@ -61,30 +61,55 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="font-display text-xl font-semibold text-coffee">
-            3. Cookie
+            3. Cookie &amp; quảng cáo (Google AdSense)
           </h2>
           <p className="mt-2">
-            Bản thân website Góc Bếp không sử dụng cookie để theo dõi người dùng.
-            Nếu trong tương lai website tích hợp thêm công cụ phân tích lượt truy
-            cập hoặc liên kết affiliate, chính sách này sẽ được cập nhật tương
-            ứng.
+            Website có thể hiển thị quảng cáo thông qua Google AdSense. Google
+            và các đối tác quảng cáo có thể sử dụng cookie để hiển thị quảng
+            cáo dựa trên lượt truy cập của bạn vào website này và các website
+            khác. Bạn có thể tìm hiểu thêm hoặc tuỳ chỉnh quảng cáo cá nhân hoá
+            tại{" "}
+            <a
+              href="https://adssettings.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-chili underline"
+            >
+              Cài đặt quảng cáo của Google
+            </a>
+            .
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-semibold text-coffee">
-            4. Liên kết đến trang khác
+            4. Liên kết affiliate
           </h2>
           <p className="mt-2">
-            Website có thể chứa liên kết đến các trang bên ngoài (YouTube, mạng xã
-            hội...). Chúng tôi không chịu trách nhiệm về nội dung hay chính sách
-            quyền riêng tư của các trang bên ngoài này.
+            Một số trang trên website (ví dụ trang &quot;Sản phẩm&quot;) chứa
+            liên kết tiếp thị liên kết (affiliate) tới các sàn thương mại điện
+            tử. Nếu bạn mua hàng qua các liên kết này, Góc Bếp có thể nhận được
+            một khoản hoa hồng nhỏ, không phát sinh thêm chi phí cho bạn. Việc
+            này không ảnh hưởng đến nội dung công thức hay đánh giá sản phẩm
+            trên website.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-semibold text-coffee">
-            5. Thay đổi chính sách
+            5. Liên kết đến trang khác
+          </h2>
+          <p className="mt-2">
+            Website có thể chứa liên kết đến các trang bên ngoài (YouTube, sàn
+            thương mại điện tử, mạng xã hội...). Chúng tôi không chịu trách
+            nhiệm về nội dung hay chính sách quyền riêng tư của các trang bên
+            ngoài này.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-display text-xl font-semibold text-coffee">
+            6. Thay đổi chính sách
           </h2>
           <p className="mt-2">
             Chính sách này có thể được cập nhật theo thời gian khi website bổ
@@ -94,7 +119,7 @@ export default function PrivacyPage() {
 
         <section>
           <h2 className="font-display text-xl font-semibold text-coffee">
-            6. Liên hệ
+            7. Liên hệ
           </h2>
           <p className="mt-2">
             Nếu có bất kỳ câu hỏi nào về chính sách quyền riêng tư này, vui lòng

@@ -17,8 +17,17 @@ export default function Footer() {
           <Link href="/videos" className="hover:text-chili">
             Video
           </Link>
+          <Link href="/cong-thuc" className="hover:text-chili">
+            Công thức
+          </Link>
+          <Link href="/san-pham" className="hover:text-chili">
+            Sản phẩm
+          </Link>
           <Link href="/privacy" className="hover:text-chili">
             Chính sách quyền riêng tư
+          </Link>
+          <Link href="/dieu-khoan" className="hover:text-chili">
+            Điều khoản sử dụng
           </Link>
           <a href={CHANNEL_URL} target="_blank" rel="noopener noreferrer" className="hover:text-chili">
             YouTube
