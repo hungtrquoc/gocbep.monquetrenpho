@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { getRecipeBySlug, getAllRecipeSlugs } from "@/lib/recipes";
+import {
+  getRecipeBySlug,
+  getAllRecipeSlugs,
+  getRelatedRecipes,
+} from "@/lib/recipes";
 import AdSlot from "@/components/AdSlot";
+import RecipeCard from "@/components/RecipeCard";
 
 export function generateStaticParams() {
   // Tạo trang tĩnh cho TẤT CẢ công thức (kể cả bản nháp) để anh xem trước
@@ -17,20 +22,75 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: recipe.title,
     description: recipe.excerpt,
+    keywords: recipe.keywords,
     openGraph: {
       title: recipe.title,
       description: recipe.excerpt,
       images: [recipe.coverImage],
+      type: "article",
     },
   };
+}
+
+function parseDurationToIso(text?: string): string | undefined {
+  if (!text) return undefined;
+  const match = text.match(/(\d+)/);
+  if (!match) return undefined;
+  return `PT${match[1]}M`;
 }
 
 export default function RecipeDetailPage({ params }: { params: { slug: string } }) {
   const recipe = getRecipeBySlug(params.slug);
   if (!recipe) return notFound();
 
+  const related = getRelatedRecipes(recipe, 3);
+  const siteUrl = "https://gocbepmonquetrenpho.vercel.app";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    name: recipe.title,
+    description: recipe.excerpt,
+    image: [recipe.coverImage],
+    author: {
+      "@type": "Organization",
+      name: "Góc Bếp – Món quê trên phố",
+    },
+    datePublished: recipe.updatedAt,
+    recipeCategory: recipe.category,
+    recipeCuisine: "Việt Nam",
+    keywords: recipe.keywords?.join(", "),
+    recipeYield: recipe.servings,
+    prepTime: parseDurationToIso(recipe.prepTime),
+    cookTime: parseDurationToIso(recipe.cookTime),
+    recipeIngredient: recipe.ingredients,
+    recipeInstructions: recipe.steps.map((step) => ({
+      "@type": "HowToStep",
+      name: step.title,
+      text: step.description,
+    })),
+    ...(recipe.videoId && {
+      video: {
+        "@type": "VideoObject",
+        name: recipe.title,
+        description: recipe.excerpt,
+        thumbnailUrl: [recipe.coverImage],
+        uploadDate: recipe.updatedAt,
+        contentUrl: `https://www.youtube.com/watch?v=${recipe.videoId}`,
+        embedUrl: `https://www.youtube.com/embed/${recipe.videoId}`,
+      },
+    }),
+  };
+
   return (
     <article className="mx-auto max-w-3xl px-4 py-14">
+      {/* Structured data cho Google Rich Results (Recipe) */}
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {!recipe.published && (
         <div className="mb-6 rounded-lg border border-chili/40 bg-chili/10 px-4 py-3 text-sm text-chili">
           <strong>Bản nháp — chưa công khai.</strong> Trang này chỉ xem được qua
@@ -39,7 +99,19 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
         </div>
       )}
 
-      <h1 className="font-display text-3xl font-bold text-coffee sm:text-4xl">
+      <nav className="mb-3 text-xs text-coffee/50">
+        <Link href="/cong-thuc" className="hover:text-chili hover:underline">
+          Công thức
+        </Link>
+        <span className="mx-1.5">/</span>
+        <span>{recipe.category}</span>
+      </nav>
+
+      <span className="inline-block rounded-full bg-turmeric/15 px-3 py-1 text-xs font-semibold text-chili">
+        {recipe.category}
+      </span>
+
+      <h1 className="mt-3 font-display text-3xl font-bold text-coffee sm:text-4xl">
         {recipe.title}
       </h1>
       <p className="mt-3 text-coffee/70">{recipe.excerpt}</p>
@@ -113,6 +185,17 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
       <div className="mt-10">
         <AdSlot slot="recipe-detail" />
       </div>
+
+      {related.length > 0 && (
+        <section className="mt-12 border-t border-turmeric/20 pt-8">
+          <h2 className="font-display text-xl font-semibold text-coffee">Món liên quan</h2>
+          <div className="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            {related.map((r) => (
+              <RecipeCard key={r.slug} recipe={r} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="mt-10 border-t border-turmeric/20 pt-6 text-sm">
         <Link href="/cong-thuc" className="font-semibold text-chili hover:underline">

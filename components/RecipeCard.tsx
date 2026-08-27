@@ -18,6 +18,9 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
         />
       </div>
       <div className="flex flex-1 flex-col gap-2 p-4">
+        <span className="w-fit rounded-full bg-turmeric/15 px-2.5 py-0.5 text-xs font-semibold text-chili">
+          {recipe.category}
+        </span>
         <h3 className="line-clamp-2 font-display text-base font-semibold text-coffee">
           {recipe.title}
         </h3>

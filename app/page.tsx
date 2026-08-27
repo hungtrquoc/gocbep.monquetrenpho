@@ -1,12 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getLatestVideos, CHANNEL_URL } from "@/lib/youtube";
+import { getPublishedRecipes } from "@/lib/recipes";
+import { getAllProducts } from "@/lib/products";
 import VideoCard from "@/components/VideoCard";
+import RecipeCard from "@/components/RecipeCard";
+import ProductCard from "@/components/ProductCard";
 import AdSlot from "@/components/AdSlot";
 
 export default async function HomePage() {
   const videos = await getLatestVideos();
-  const featured = videos.slice(0, 6);
+  const featuredVideos = videos.slice(0, 3);
+  const featuredRecipes = getPublishedRecipes().slice(0, 6);
+  const featuredProducts = getAllProducts().slice(0, 3);
 
   return (
     <div>
@@ -25,30 +31,102 @@ export default async function HomePage() {
             Góc Bếp – Món quê trên phố
           </h1>
           <p className="max-w-2xl text-base text-coffee/80 sm:text-lg">
-            Nơi lưu giữ những công thức món ăn dân dã, mộc mạc của quê nhà, được
-            nấu lại giữa nhịp sống thành phố. Cùng Góc Bếp vào bếp mỗi ngày với
-            những món ăn gần gũi, ấm áp như bữa cơm gia đình.
+            Công thức nấu ăn chi tiết, dễ làm cho từng món quê dân dã — kèm gợi ý
+            dụng cụ, nguyên liệu Góc Bếp thường dùng để anh/chị vào bếp thuận tiện
+            hơn mỗi ngày.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/cong-thuc"
+              className="rounded-full bg-chili px-6 py-3 font-semibold text-white shadow-md transition hover:bg-chili/90"
+            >
+              Xem công thức nấu ăn
+            </Link>
+            <Link
+              href="/san-pham"
+              className="rounded-full border border-chili px-6 py-3 font-semibold text-chili transition hover:bg-chili/10"
+            >
+              Sản phẩm gợi ý
+            </Link>
             <a
               href={CHANNEL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-chili px-6 py-3 font-semibold text-white shadow-md transition hover:bg-chili/90"
+              className="rounded-full px-6 py-3 font-semibold text-coffee/70 underline-offset-4 transition hover:text-chili hover:underline"
             >
               Xem kênh YouTube
             </a>
-            <Link
-              href="/videos"
-              className="rounded-full border border-chili px-6 py-3 font-semibold text-chili transition hover:bg-chili/10"
-            >
-              Xem tất cả video
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* Latest videos */}
+      {/* Công thức nổi bật */}
+      <section className="mx-auto max-w-5xl px-4 py-14">
+        <div className="mb-8 flex items-end justify-between">
+          <div>
+            <h2 className="font-display text-2xl font-bold text-coffee sm:text-3xl">
+              Công thức nổi bật
+            </h2>
+            <p className="text-coffee/60">Hướng dẫn chi tiết từng bước, dễ làm tại nhà</p>
+          </div>
+          <Link href="/cong-thuc" className="hidden text-sm font-semibold text-chili hover:underline sm:block">
+            Xem tất cả →
+          </Link>
+        </div>
+
+        {featuredRecipes.length > 0 ? (
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredRecipes.map((recipe) => (
+              <RecipeCard key={recipe.slug} recipe={recipe} />
+            ))}
+          </div>
+        ) : (
+          <p className="rounded-xl border border-dashed border-turmeric/40 bg-white p-8 text-center text-coffee/60">
+            Các bài công thức chi tiết đang được biên soạn, mời anh quay lại sau nhé!
+          </p>
+        )}
+
+        <div className="mt-8 text-center sm:hidden">
+          <Link href="/cong-thuc" className="font-semibold text-chili hover:underline">
+            Xem tất cả công thức →
+          </Link>
+        </div>
+      </section>
+
+      <div className="mx-auto max-w-5xl px-4">
+        <AdSlot slot="home-mid" />
+      </div>
+
+      {/* Sản phẩm gợi ý */}
+      <section className="border-t border-turmeric/20 bg-white/60">
+        <div className="mx-auto max-w-5xl px-4 py-14">
+          <div className="mb-8 flex items-end justify-between">
+            <div>
+              <h2 className="font-display text-2xl font-bold text-coffee sm:text-3xl">
+                Sản phẩm Góc Bếp gợi ý
+              </h2>
+              <p className="text-coffee/60">Dụng cụ, nguyên liệu Góc Bếp thường dùng trong video</p>
+            </div>
+            <Link href="/san-pham" className="hidden text-sm font-semibold text-chili hover:underline sm:block">
+              Xem tất cả →
+            </Link>
+          </div>
+
+          {featuredProducts.length > 0 ? (
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {featuredProducts.map((product) => (
+                <ProductCard key={product.slug} product={product} />
+              ))}
+            </div>
+          ) : (
+            <p className="rounded-xl border border-dashed border-turmeric/40 bg-white p-8 text-center text-coffee/60">
+              Đang cập nhật danh sách sản phẩm gợi ý, mời quay lại sau!
+            </p>
+          )}
+        </div>
+      </section>
+
+      {/* Video mới nhất */}
       <section className="mx-auto max-w-5xl px-4 py-14">
         <div className="mb-8 flex items-end justify-between">
           <div>
@@ -62,9 +140,9 @@ export default async function HomePage() {
           </Link>
         </div>
 
-        {featured.length > 0 ? (
+        {featuredVideos.length > 0 ? (
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((video) => (
+            {featuredVideos.map((video) => (
               <VideoCard key={video.id} video={video} />
             ))}
           </div>
@@ -85,10 +163,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <div className="mx-auto max-w-5xl px-4">
-        <AdSlot slot="home-mid" />
-      </div>
-
       {/* Intro strip */}
       <section className="border-t border-turmeric/20 bg-white/60">
         <div className="mx-auto grid max-w-5xl gap-8 px-4 py-14 sm:grid-cols-3">
@@ -100,10 +174,10 @@ export default async function HomePage() {
             </p>
           </div>
           <div className="text-center">
-            <p className="text-4xl">🎥</p>
-            <h3 className="mt-3 font-display font-semibold text-coffee">Video mới đều đặn</h3>
+            <p className="text-4xl">📖</p>
+            <h3 className="mt-3 font-display font-semibold text-coffee">Công thức chi tiết</h3>
             <p className="mt-1 text-sm text-coffee/70">
-              Video mới nhất trên trang này luôn được cập nhật tự động từ YouTube.
+              Từng bước rõ ràng, nguyên liệu cụ thể — làm theo là thành công.
             </p>
           </div>
           <div className="text-center">
