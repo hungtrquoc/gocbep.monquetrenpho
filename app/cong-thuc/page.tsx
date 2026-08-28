@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CATEGORIES, CATEGORY_SLUGS, getPublishedRecipes } from "@/lib/recipes";
+import { filterAvailableRecipes } from "@/lib/youtube-availability";
 import RecipeCard from "@/components/RecipeCard";
 import AdSlot from "@/components/AdSlot";
 
@@ -9,8 +10,10 @@ export const metadata: Metadata = {
   description: "Toàn bộ công thức nấu ăn chi tiết từ kênh Góc Bếp.",
 };
 
-export default function RecipesPage() {
-  const recipes = getPublishedRecipes();
+export const revalidate = 1800;
+
+export default async function RecipesPage() {
+  const recipes = await filterAvailableRecipes(getPublishedRecipes());
 
   const usedCategories = CATEGORIES.filter((c) =>
     recipes.some((r) => r.category === c)

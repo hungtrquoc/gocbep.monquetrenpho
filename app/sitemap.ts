@@ -1,9 +1,12 @@
 import type { MetadataRoute } from "next";
 import { CATEGORIES, CATEGORY_SLUGS, getPublishedRecipes } from "@/lib/recipes";
+import { filterAvailableRecipes } from "@/lib/youtube-availability";
 
 const SITE_URL = "https://gocbep.vercel.app";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export const revalidate = 1800;
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: "daily", priority: 1 },
     { url: `${SITE_URL}/videos`, changeFrequency: "hourly", priority: 0.8 },
@@ -14,7 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/dieu-khoan`, changeFrequency: "yearly", priority: 0.1 },
   ];
 
-  const recipeRoutes: MetadataRoute.Sitemap = getPublishedRecipes().map((recipe) => ({
+  const availableRecipes = await filterAvailableRecipes(getPublishedRecipes());
+  const recipeRoutes: MetadataRoute.Sitemap = availableRecipes.map((recipe) => ({
     url: `${SITE_URL}/cong-thuc/${recipe.slug}`,
     lastModified: recipe.updatedAt,
     changeFrequency: "monthly",

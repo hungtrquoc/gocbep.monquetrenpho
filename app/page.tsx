@@ -3,15 +3,18 @@ import Link from "next/link";
 import { getLatestVideos, CHANNEL_URL } from "@/lib/youtube";
 import { CATEGORIES, CATEGORY_SLUGS, getPublishedRecipes } from "@/lib/recipes";
 import { getAllProducts } from "@/lib/products";
+import { filterAvailableRecipes } from "@/lib/youtube-availability";
 import VideoCard from "@/components/VideoCard";
 import RecipeCard from "@/components/RecipeCard";
 import ProductCard from "@/components/ProductCard";
 import AdSlot from "@/components/AdSlot";
 
+export const revalidate = 1800;
+
 export default async function HomePage() {
   const videos = await getLatestVideos();
   const featuredVideos = videos.slice(0, 3);
-  const publishedRecipes = getPublishedRecipes();
+  const publishedRecipes = await filterAvailableRecipes(getPublishedRecipes());
   const featuredRecipes = publishedRecipes.slice(0, 6);
   const featuredProducts = getAllProducts().slice(0, 3);
   const usedCategories = CATEGORIES.filter((c) =>

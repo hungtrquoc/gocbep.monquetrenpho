@@ -7,8 +7,11 @@ import {
   getCategoryBySlug,
   getRecipesByCategory,
 } from "@/lib/recipes";
+import { filterAvailableRecipes } from "@/lib/youtube-availability";
 import RecipeCard from "@/components/RecipeCard";
 import AdSlot from "@/components/AdSlot";
+
+export const revalidate = 1800;
 
 export function generateStaticParams() {
   return CATEGORIES.map((c) => ({ category: CATEGORY_SLUGS[c] }));
@@ -27,7 +30,7 @@ export function generateMetadata({
   };
 }
 
-export default function CategoryPage({
+export default async function CategoryPage({
   params,
 }: {
   params: { category: string };
@@ -35,7 +38,7 @@ export default function CategoryPage({
   const category = getCategoryBySlug(params.category);
   if (!category) return notFound();
 
-  const recipes = getRecipesByCategory(category);
+  const recipes = await filterAvailableRecipes(getRecipesByCategory(category));
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-14">

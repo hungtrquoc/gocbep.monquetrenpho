@@ -8,12 +8,15 @@ import {
   getRelatedRecipes,
   CATEGORY_SLUGS,
 } from "@/lib/recipes";
+import { isYoutubeVideoAvailable, filterAvailableRecipes } from "@/lib/youtube-availability";
 import AdSlot from "@/components/AdSlot";
 import RecipeCard from "@/components/RecipeCard";
 import RecipeIngredients from "@/components/RecipeIngredients";
 import PrintButton from "@/components/PrintButton";
 import RelatedProducts from "@/components/RelatedProducts";
 import { getProductsForRecipe } from "@/lib/products";
+
+export const revalidate = 1800;
 
 export function generateStaticParams() {
   // Tạo trang tĩnh cho TẤT CẢ công thức (kể cả bản nháp) để anh xem trước
@@ -44,11 +47,18 @@ function parseDurationToIso(text?: string): string | undefined {
   return `PT${match[1]}M`;
 }
 
-export default function RecipeDetailPage({ params }: { params: { slug: string } }) {
+export default async function RecipeDetailPage({ params }: { params: { slug: string } }) {
   const recipe = getRecipeBySlug(params.slug);
   if (!recipe) return notFound();
 
-  const related = getRelatedRecipes(recipe, 3);
+  // Công thức đã published nhưng video YouTube chưa thực sự public (vd còn
+  // đang lên lịch) → 404 tạm thời, tự hiện lại khi video chuyển sang public
+  // nhờ revalidate ISR ở trên, không cần deploy lại.
+  if (recipe.published && !(await isYoutubeVideoAvailable(recipe.videoId))) {
+    return notFound();
+  }
+
+  const related = await filterAvailableRecipes(getRelatedRecipes(recipe, 3));
   const relatedProducts = getProductsForRecipe(recipe.slug);
   const siteUrl = "https://gocbep.vercel.app";
 
