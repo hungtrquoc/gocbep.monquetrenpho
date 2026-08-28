@@ -1198,5 +1198,50 @@
     ],
     "published": true,
     "updatedAt": "2026-08-28"
+  },
+  {
+    "slug": "mi-hoanh-thanh-thit-bo-trung-chan-nong-hoi",
+    "videoId": "K-c-sHGMdyQ",
+    "title": "Mì Hoành Thánh Thịt Bò Trứng Chần Nóng Hổi",
+    "excerpt": "Mì hoành thánh thịt bò là sự kết hợp hoàn hảo giữa sợi mì dai ngon cùng hoành thánh nhân thịt đậm vị và trứng chần lòng đào béo ngậy. Một tô mì đầy ắp topping nóng hổi sẽ giúp bạn nạp đầy năng lượng cho ngày mới chỉ sau vài phút chế biến.",
+    "coverImage": "https://i.ytimg.com/vi/K-c-sHGMdyQ/hqdefault.jpg",
+    "category": "Món nước",
+    "keywords": [
+      "mì hoành thánh thịt bò",
+      "cách nấu mì gói ngon",
+      "mì tôm trứng lòng đào"
+    ],
+    "servings": "1 người ăn",
+    "prepTime": "5 phút",
+    "cookTime": "5 phút",
+    "ingredients": [
+      "1 vắt mì gói (kèm gói gia vị)",
+      "2-3 cái hoành thánh (sủi cảo)",
+      "50g thịt bò thái mỏng",
+      "1 quả trứng gà",
+      "1 nhánh hành lá (cắt nhỏ)",
+      "1/2 quả ớt tươi (thái lát)",
+      "400ml nước sôi"
+    ],
+    "steps": [
+      {
+        "title": "Chuẩn bị tô mì",
+        "description": "Cho vắt mì gói vào tô, thêm gói gia vị của mì cùng với hành lá cắt nhỏ và ớt tươi thái lát lên trên."
+      },
+      {
+        "title": "Luộc các loại topping",
+        "description": "Đun sôi một nồi nước nhỏ, thả hoành thánh vào luộc chín tới. Tiếp tục đập quả trứng gà vào chần lòng đào, sau đó cho thịt bò thái mỏng vào chần sơ vừa chín mềm rồi vớt tất cả xếp lên trên tô mì."
+      },
+      {
+        "title": "Chan nước dùng và thưởng thức",
+        "description": "Rưới trực tiếp phần nước luộc đang sôi sùng sục vào tô mì cho ngập nguyên liệu, đậy nắp lại trong khoảng 3 phút cho mì chín mềm rồi mở ra trộn đều và thưởng thức ngay."
+      }
+    ],
+    "tips": [
+      "Chần thịt bò vừa chín tới để thịt giữ được độ mềm mọng và không bị dai.",
+      "Chần trứng nhỏ lửa hoặc dùng muôi giữ nhẹ để lòng đào không bị vỡ nát khi nấu."
+    ],
+    "published": true,
+    "updatedAt": "2026-08-28"
   }
 ]
