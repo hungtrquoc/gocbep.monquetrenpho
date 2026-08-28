@@ -3,11 +3,14 @@
     "slug": "bot-rang-muoi-bu-phuong-599g",
     "name": "Bột Rang Muối Bu Phương 599G Phiên Bản Nhà Hàng - Gia Vị Gà Rang Muối, Tôm Rang Muối",
     "image": "https://down-vn.img.susercontent.com/file/vn-11134207-81ztc-ms107gmfj9xic1",
-    "price": "134.900₫",
+    "price": "",
     "description": "Bột rang muối chuẩn vị nhà hàng, dùng cho gà/tôm/cua/mực rang muối, hộp 599g.",
     "affiliateUrl": "https://s.shopee.vn/9fKRfuUBm8",
     "category": "Nguyên liệu & Gia vị",
     "platform": "Shopee",
-    "relatedRecipeSlugs": []
+    "relatedRecipeSlugs": [
+      "ca-rang-muoi-don-gian-hop-lai-rai",
+      "chan-ga-rang-muoi-ngon-hon-ngoai-hang"
+    ]
   }
 ]
