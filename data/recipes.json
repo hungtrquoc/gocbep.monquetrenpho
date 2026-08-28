@@ -1243,5 +1243,53 @@
     ],
     "published": true,
     "updatedAt": "2026-08-28"
+  },
+  {
+    "slug": "dau-phu-tam-hanh-gion-beo-thom-lung",
+    "videoId": "cJTivZ2yI2Q",
+    "title": "Đậu Phụ Tẩm Hành Giòn Béo Thơm Lừng",
+    "excerpt": "Đậu phụ tẩm hành với lớp vỏ ngoài vàng giòn rụm kết hợp cùng sốt mỡ hành thơm nức mũi. Món ăn dân dã, chế biến siêu nhanh nhưng cực kỳ đưa cơm cho bữa ăn hàng ngày.",
+    "coverImage": "https://i.ytimg.com/vi/cJTivZ2yI2Q/hqdefault.jpg",
+    "category": "Món chính",
+    "keywords": [
+      "cách làm đậu phụ tẩm hành",
+      "đậu hũ tẩm mỡ hành",
+      "đậu chiên giòn mỡ hành"
+    ],
+    "servings": "2-3 người ăn",
+    "prepTime": "10 phút",
+    "cookTime": "15 phút",
+    "ingredients": [
+      "3-4 bìa đậu phụ trắng",
+      "50g hành lá tươi",
+      "2 thìa canh nước mắm",
+      "1 thìa canh đường",
+      "1 thìa canh nước lọc",
+      "Dầu ăn để chiên"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế nguyên liệu",
+        "description": "Đậu phụ rửa nhẹ, để ráo nước rồi cắt thành từng miếng vuông vừa ăn. Hành lá nhặt rửa sạch, cắt nhỏ rồi cho vào chén chịu nhiệt."
+      },
+      {
+        "title": "Làm sốt mỡ hành",
+        "description": "Múc một muỗng canh dầu sôi trực tiếp từ chảo chiên rưới vào bát hành lá để làm chín hành và dậy mùi thơm. Sau đó thêm vào chén hành 2 thìa canh nước mắm, 1 thìa canh đường và 1 thìa canh nước lọc, khuấy đều cho tan đường."
+      },
+      {
+        "title": "Chiên đậu phụ",
+        "description": "Đun nóng nhiều dầu trong chảo, thả từng miếng đậu phụ vào chiên ở lửa vừa đến khi các mặt chín vàng đều và phồng giòn thì vớt ra để ráo dầu."
+      },
+      {
+        "title": "Tẩm mỡ hành và hoàn thiện",
+        "description": "Xếp đậu phụ chiên giòn ra đĩa, rưới đều nước sốt mỡ hành lên từng miếng đậu khi còn nóng hoặc nhúng trực tiếp miếng đậu vào chén mỡ hành rồi thưởng thức ngay."
+      }
+    ],
+    "tips": [
+      "Rưới dầu sôi nóng già vào hành lá giúp hành chín tái, giữ được màu xanh mướt đẹp mắt và thơm ngon.",
+      "Nên tẩm hành hoặc rưới sốt ngay khi đậu vừa chiên xong còn nóng hổi để đậu thấm vị tốt nhất."
+    ],
+    "published": true,
+    "updatedAt": "2026-08-28"
   }
 ]
