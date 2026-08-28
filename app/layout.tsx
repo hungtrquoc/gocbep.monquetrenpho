@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gocbepmonquetrenpho.vercel.app"),
+  metadataBase: new URL("https://gocbep.vercel.app"),
   title: {
     default: "Góc Bếp – Món quê trên phố",
     template: "%s | Góc Bếp",

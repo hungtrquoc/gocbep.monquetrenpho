@@ -12,6 +12,8 @@ import AdSlot from "@/components/AdSlot";
 import RecipeCard from "@/components/RecipeCard";
 import RecipeIngredients from "@/components/RecipeIngredients";
 import PrintButton from "@/components/PrintButton";
+import RelatedProducts from "@/components/RelatedProducts";
+import { getProductsForRecipe } from "@/lib/products";
 
 export function generateStaticParams() {
   // Tạo trang tĩnh cho TẤT CẢ công thức (kể cả bản nháp) để anh xem trước
@@ -47,7 +49,8 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
   if (!recipe) return notFound();
 
   const related = getRelatedRecipes(recipe, 3);
-  const siteUrl = "https://gocbepmonquetrenpho.vercel.app";
+  const relatedProducts = getProductsForRecipe(recipe.slug);
+  const siteUrl = "https://gocbep.vercel.app";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -194,6 +197,8 @@ export default function RecipeDetailPage({ params }: { params: { slug: string } 
           </ul>
         </section>
       )}
+
+      <RelatedProducts products={relatedProducts} />
 
       <div className="no-print mt-10">
         <AdSlot slot="recipe-detail" />

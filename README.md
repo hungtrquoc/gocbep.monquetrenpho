@@ -100,8 +100,15 @@ ký.
 
 ## Thêm sản phẩm affiliate
 
-Sửa trực tiếp mảng `products` trong `lib/products.ts` — mỗi sản phẩm gồm tên,
-ảnh, mô tả ngắn, và link affiliate thật (Shopee Affiliate, Accesstrade,
+Cách chính: dùng tab "Thêm sản phẩm" trong `GocBepApp.py` (GocBep_Application)
+— dán link sản phẩm (Shopee/Lazada/TikTok Shop...), bấm "Lấy thông tin" để
+tool tự lấy tên/ảnh/giá khi có thể, điền/sửa nốt các ô còn thiếu rồi bấm "Lưu
+sản phẩm" — tool tự ghi vào `data/products.json` và git push, Vercel tự
+deploy lại.
+
+Vẫn có thể sửa tay: dữ liệu sản phẩm nằm ở `data/products.json` (mảng JSON
+thuần, `lib/products.ts` chỉ định nghĩa type + helper) — mỗi sản phẩm gồm
+tên, ảnh, mô tả ngắn, và link affiliate thật (Shopee Affiliate, Accesstrade,
 Involve Asia, TikTok Shop...). Ảnh có thể để trong `public/products/` rồi
 dùng đường dẫn `/products/ten-anh.jpg` (cách này luôn chạy được ngay,
 khuyên dùng), hoặc dùng thẳng link ảnh sản phẩm từ sàn TMĐT — nếu dùng link

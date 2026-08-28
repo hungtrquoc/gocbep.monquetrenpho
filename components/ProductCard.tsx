@@ -19,11 +19,16 @@ export default function ProductCard({ product }: { product: Product }) {
         />
       </div>
       <div className="flex flex-1 flex-col gap-1 p-4">
-        {product.category && (
+        <div className="flex items-center gap-1.5">
           <span className="text-xs font-semibold uppercase tracking-wide text-turmeric">
             {product.category}
           </span>
-        )}
+          {product.platform && (
+            <span className="rounded-full bg-coffee/10 px-2 py-0.5 text-[11px] font-medium text-coffee/70">
+              {product.platform}
+            </span>
+          )}
+        </div>
         <h3 className="line-clamp-2 font-display text-base font-semibold text-coffee">
           {product.name}
         </h3>
@@ -33,7 +38,7 @@ export default function ProductCard({ product }: { product: Product }) {
             <span className="font-display font-semibold text-chili">{product.price}</span>
           )}
           <span className="text-sm font-semibold text-chili group-hover:underline">
-            Xem sản phẩm →
+            Mua ngay →
           </span>
         </div>
       </div>
