@@ -1452,5 +1452,58 @@
     ],
     "published": true,
     "updatedAt": "2026-09-11"
+  },
+  {
+    "slug": "hot-vit-lon-um-bau-thanh-ngot-bo-duong",
+    "videoId": "cz2tzS9tiJc",
+    "title": "Hột Vịt Lộn Um Bầu Thanh Ngọt Bổ Dưỡng",
+    "excerpt": "Hột vịt lộn um bầu là món ăn kết hợp hoàn hảo giữa vị ngọt thanh mát của bầu tươi cùng trứng vịt lộn béo ngậy. Nước canh ngấm vị gừng ớt cay nhẹ cùng rau mồng tơi tươi mát khiến ai thưởng thức cũng phải tấm tắc khen ngợi.",
+    "coverImage": "https://i.ytimg.com/vi/cz2tzS9tiJc/hqdefault.jpg",
+    "category": "Món nước",
+    "keywords": [
+      "hột vịt lộn um bầu",
+      "cách làm trứng vịt lộn um bầu",
+      "canh trứng vịt lộn nấu bầu",
+      "món ngon từ trứng vịt lộn"
+    ],
+    "servings": "2-3 người ăn",
+    "prepTime": "15 phút",
+    "cookTime": "20 phút",
+    "ingredients": [
+      "5 quả trứng vịt lộn",
+      "6-8 quả trứng cút lộn",
+      "1/2 quả bầu non (khoảng 300g), gọt vỏ cắt lát vừa ăn",
+      "1 bó rau mồng tơi, nhặt rửa sạch và cắt khúc",
+      "1 củ hành tím và 2 tép tỏi băm nhỏ",
+      "1 nhánh gừng thái sợi hoặc băm nhỏ",
+      "1-2 quả ớt tươi cắt lát",
+      "Gia vị: 1 muỗng canh nước mắm, 1 muỗng cà phê hạt nêm, 1/2 muỗng cà phê muối, 1/2 muỗng cà phê bột ngọt",
+      "1 muỗng canh dầu ăn",
+      "500ml nước lọc"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế và luộc trứng",
+        "description": "Rửa sạch vỏ trứng vịt lộn và trứng cút lộn, sau đó đem luộc chín cùng vài lát ớt. Trứng chín vớt ra để nguội bớt rồi bóc sạch vỏ, giữ lại phần nước ngọt trong trứng."
+      },
+      {
+        "title": "Xào thơm bầu và nêm gia vị",
+        "description": "Đặt chảo hoặc nồi lên bếp, cho dầu ăn vào phi thơm hành tím và tỏi băm. Cho toàn bộ phần bầu đã cắt lát vào xào sơ, nêm nước mắm, hạt nêm, muối, bột ngọt và gừng vào đảo đều cho bầu thấm vị."
+      },
+      {
+        "title": "Nấu và um trứng vịt lộn",
+        "description": "Châm thêm khoảng 500ml nước vào nồi, đun sôi nhẹ rồi thả trứng vịt lộn và trứng cút lộn đã bóc vỏ vào. Nấu um nhỏ lửa trong khoảng 3-5 phút cho trứng ngấm đều nước dùng và vị gừng."
+      },
+      {
+        "title": "Thêm rau và hoàn thành",
+        "description": "Thêm vài lát ớt tươi để tăng hương vị và độ cay the. Cuối cùng cho rau mồng tơi vào đảo đều, nấu vừa chín tới thì tắt bếp ngay để giữ màu xanh mướt của rau rồi múc ra thưởng thức khi còn nóng."
+      }
+    ],
+    "tips": [
+      "Nên cho gừng vào xào cùng bầu hoặc nấu cùng nước dùng để khử mùi tanh của trứng và làm ấm bụng.",
+      "Rau mồng tơi rất nhanh chín nên chỉ cần cho vào cuối cùng, đảo đều qua nước sôi rồi tắt bếp ngay để rau không bị nhũn và đổi màu."
+    ],
+    "published": true,
+    "updatedAt": "2026-09-11"
   }
 ]
