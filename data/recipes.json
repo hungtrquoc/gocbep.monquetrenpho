@@ -1291,5 +1291,55 @@
     ],
     "published": true,
     "updatedAt": "2026-08-28"
+  },
+  {
+    "slug": "ngheu-sot-pho-mai-trung-muoi-beo-ngay",
+    "videoId": "a_sWZ_qfOic",
+    "title": "Nghêu Sốt Phô Mai Trứng Muối Béo Ngậy",
+    "excerpt": "Nghêu sốt phô mai trứng muối với từng con nghêu ngọt thịt quyện cùng sốt vàng óng, béo bùi và bắp ngọt giòn sần sật. Món ăn siêu hấp dẫn này mà chấm cùng bánh mì nóng giòn thì ngon hết ý.",
+    "coverImage": "https://i.ytimg.com/vi/a_sWZ_qfOic/hqdefault.jpg",
+    "category": "Bánh & Ăn vặt",
+    "keywords": [
+      "nghêu sốt phô mai trứng muối",
+      "cách làm nghêu sốt trứng muối",
+      "nghêu xào bơ tỏi trứng muối"
+    ],
+    "servings": "2-3 người ăn",
+    "prepTime": "30 phút",
+    "cookTime": "15 phút",
+    "ingredients": [
+      "500g nghêu (ngao) hoa hoặc nghêu trắng",
+      "1 bắp ngô ngọt (tách hạt)",
+      "3 thìa canh sốt phô mai trứng muối",
+      "50ml sữa tươi không đường",
+      "1 củ tỏi (băm nhỏ)",
+      "1-2 quả ớt tươi",
+      "1 ít rau mùi (ngò rí)",
+      "Bánh mì ăn kèm"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế nghêu và bắp",
+        "description": "Nghêu ngâm cùng nước có cắt vài lát ớt tươi khoảng 30 phút để nhả sạch cát, sau đó rửa lại thật sạch. Cho nghêu vào nồi nước sôi luộc sơ đến khi vừa hé miệng thì vớt ra để ráo. Hạt bắp ngọt cũng cho vào luộc chín tới rồi vớt ra."
+      },
+      {
+        "title": "Nấu sốt trứng muối",
+        "description": "Cho 3 thìa canh sốt phô mai trứng muối, sữa tươi không đường và tỏi băm nhỏ vào chảo. Bật lửa vừa, khuấy đều tay cho sốt hòa quyện và sôi sánh mịn dậy mùi thơm."
+      },
+      {
+        "title": "Xào nghêu với sốt",
+        "description": "Trút nghêu đã luộc và bắp ngọt vào chảo sốt. Đảo đều tay trên lửa vừa cho phần sốt phô mai trứng muối áo đều quanh từng con nghêu và bắp ngọt thì tắt bếp."
+      },
+      {
+        "title": "Trình bày và thưởng thức",
+        "description": "Múc nghêu sốt phô mai trứng muối ra đĩa sâu lòng, rắc thêm chút rau mùi thái nhỏ lên trên. Thưởng thức ngay khi còn nóng cùng bánh mì giòn rụm."
+      }
+    ],
+    "tips": [
+      "Chỉ luộc nghêu vừa hé miệng thì vớt ra ngay, không luộc quá lâu để thịt nghêu giữ được độ ngọt mềm mọng nước.",
+      "Nếu muốn ăn cay, bạn có thể cho thêm ớt băm vào lúc đun sốt để tăng hương vị kích thích."
+    ],
+    "published": true,
+    "updatedAt": "2026-09-11"
   }
 ]
