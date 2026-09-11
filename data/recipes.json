@@ -1394,5 +1394,63 @@
     ],
     "published": true,
     "updatedAt": "2026-09-11"
+  },
+  {
+    "slug": "canh-chua-ca-nau-khe-thanh-mat",
+    "videoId": "8iAob-n04Jw",
+    "title": "Canh Chua Cá Nấu Khế Thanh Mát",
+    "excerpt": "Canh chua cá nấu khế mang đến vị chua thanh dịu nhẹ từ khế tươi kết hợp cùng thịt cá ngọt mềm, thơm lừng mùi thì là và hành lá. Món canh thanh nhiệt này ăn cùng cơm nóng trong những ngày oi bức thì ngon hết ý.",
+    "coverImage": "https://i.ytimg.com/vi/8iAob-n04Jw/hqdefault.jpg",
+    "category": "Món nước",
+    "keywords": [
+      "canh chua cá nấu khế",
+      "cách nấu canh cá khế chua",
+      "canh cá thì là"
+    ],
+    "servings": "2-3 người ăn",
+    "prepTime": "15 phút",
+    "cookTime": "20 phút",
+    "ingredients": [
+      "1/2 đầu cá (cá trắm/cá chép), làm sạch",
+      "2 quả khế chua",
+      "2 quả cà chua",
+      "1 nắm thì là",
+      "2 nhánh hành lá",
+      "3 củ hành tím",
+      "1 nhánh gừng nhỏ",
+      "1 quả ớt cay",
+      "1 thìa cà phê bột canh",
+      "1 thìa cà phê hạt nêm",
+      "1 thìa canh nước mắm",
+      "2 thìa canh dầu ăn"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế các nguyên liệu",
+        "description": "Cá rửa sạch, ướp sơ với chút hạt nêm hoặc bột canh cho ngấm. Cà chua rửa sạch bổ múi cau. Hành lá cắt khúc, thì là thái nhỏ. Gừng, ớt và hành tím băm/thái lát. Khế cắt bỏ viền, thái lát mỏng hình ngôi sao; một phần khế đem giã sơ rồi vắt bớt nước chua gắt."
+      },
+      {
+        "title": "Xào sơ cá",
+        "description": "Bắc nồi hoặc chảo lên bếp, cho dầu ăn vào phi thơm một ít gừng và hành tím, sau đó cho phần đầu cá vào xào/chiên sơ hai mặt cho săn thịt rồi gắp ra đĩa riêng."
+      },
+      {
+        "title": "Xào khế và cà chua",
+        "description": "Dùng lại nồi đó, thêm hành tím và gừng vào phi thơm, trút cà chua và toàn bộ phần khế vào đảo đều. Nêm vào 1 thìa hạt nêm và 1 thìa nước mắm rồi xào cho cà chua chín mềm, dậy màu đẹp."
+      },
+      {
+        "title": "Nấu canh cá",
+        "description": "Chế lượng nước sôi vừa ăn vào nồi khế xào, đun sôi bùng lên rồi thả phần cá đã xào sơ vào nấu chín tới ở lửa vừa trong khoảng 10-15 phút. Nếm lại gia vị cho vừa khẩu vị chua thanh."
+      },
+      {
+        "title": "Hoàn thành món ăn",
+        "description": "Khi cá đã chín mềm và ngấm vị, cho hành lá, thì là và vài lát ớt vào nồi, đảo nhẹ rồi tắt bếp ngay. Múc canh cá nấu khế ra tô và thưởng thức nóng cùng cơm trắng."
+      }
+    ],
+    "tips": [
+      "Khế chua sau khi cắt lát đem giã dập và vắt nhẹ bớt nước sẽ giúp nước canh có vị chua dịu thanh, không bị gắt.",
+      "Nên cho nước sôi hoặc nước nóng vào nấu canh cá để nước dùng trong và cá không bị tanh."
+    ],
+    "published": true,
+    "updatedAt": "2026-09-11"
   }
 ]
