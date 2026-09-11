@@ -1341,5 +1341,58 @@
     ],
     "published": true,
     "updatedAt": "2026-09-11"
+  },
+  {
+    "slug": "nu-bi-xao-thit-bo-gion-ngot",
+    "videoId": "cklROqOZGjE",
+    "title": "Nụ Bí Xào Thịt Bò Giòn Ngọt",
+    "excerpt": "Nụ Bí Xào Thịt Bò là món ăn thanh mát kết hợp giữa nụ bí non ngọt giòn và thịt bò mềm thơm dậy mùi tỏi phi. Món xào đơn giản, màu sắc bắt mắt này chắc chắn sẽ khiến bữa cơm gia đình thêm phần ngon miệng.",
+    "coverImage": "https://i.ytimg.com/vi/cklROqOZGjE/hqdefault.jpg",
+    "category": "Món chính",
+    "keywords": [
+      "cách làm nụ bí xào thịt bò",
+      "nụ bí xào bò",
+      "món ngon với hoa bí"
+    ],
+    "servings": "3-4 người ăn",
+    "prepTime": "15 phút",
+    "cookTime": "10 phút",
+    "ingredients": [
+      "300g nụ bí non",
+      "200g thịt bò, thái lát mỏng",
+      "1 củ tỏi, băm nhỏ và thái lát",
+      "1 thìa cà phê hạt nêm",
+      "1/2 thìa cà phê đường",
+      "1 thìa canh dầu hào",
+      "2 thìa canh dầu ăn"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế nụ bí và ướp thịt bò",
+        "description": "Tước sạch phần xơ ở cuống nụ bí, tách bỏ nhụy hoa bên trong rồi bổ đôi dọc theo thân nụ. Rửa sạch và để ráo. Thịt bò cho vào tô ướp cùng 1/2 thìa cà phê hạt nêm, chút tỏi băm và 1/2 thìa canh dầu hào trong khoảng 10-15 phút."
+      },
+      {
+        "title": "Chần sơ nụ bí",
+        "description": "Đun sôi một nồi nước, thả nụ bí vào chần nhanh trong khoảng 1 phút rồi vớt ra ngay để giữ được độ giòn ngọt và màu xanh mướt."
+      },
+      {
+        "title": "Xào thịt bò",
+        "description": "Làm nóng chảo với dầu ăn, phi thơm tỏi băm rồi cho thịt bò vào xào trên lửa lớn đảo nhanh tay đến khi thịt vừa chín tới thì trút ra đĩa riêng."
+      },
+      {
+        "title": "Xào nụ bí với thịt bò",
+        "description": "Tiếp tục phi thơm tỏi trong chảo, cho nụ bí đã chần vào xào đều. Nêm hạt nêm, đường và dầu hào cho vừa khẩu vị. Đảo nhanh tay rồi trút thịt bò vào đảo đều cùng nụ bí cho ngấm gia vị khoảng 1 phút rồi tắt bếp."
+      },
+      {
+        "title": "Trình bày và thưởng thức",
+        "description": "Bày nụ bí xào thịt bò ra đĩa, rắc thêm chút tỏi phi lên trên và thưởng thức nóng cùng cơm trắng."
+      }
+    ],
+    "tips": [
+      "Nên tách bỏ phần nhụy hoa bên trong nụ bí để món xào không bị đắng và ngon miệng hơn.",
+      "Chần sơ nụ bí trước khi xào và xào trên lửa lớn đảo nhanh tay để bí giữ được độ giòn và màu xanh đẹp mắt."
+    ],
+    "published": true,
+    "updatedAt": "2026-09-11"
   }
 ]
