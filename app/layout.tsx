@@ -1,27 +1,65 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import { Be_Vietnam_Pro, Lora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { CHANNEL_URL } from "@/lib/youtube";
+
+// Font tự host qua next/font: không chặn render, không nháy chữ (FOUT), có
+// subset tiếng Việt - thay cho @import url(fonts.googleapis.com) cũ trong CSS.
+const beVietnam = Be_Vietnam_Pro({
+  subsets: ["latin", "vietnamese"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  variable: "--font-be-vietnam",
+});
+
+// Chữ có chân (serif) cho tiêu đề - phong cách tạp chí ẩm thực; thân bài dùng Be Vietnam Pro.
+const lora = Lora({
+  subsets: ["latin", "vietnamese"],
+  weight: ["500", "600", "700"],
+  display: "swap",
+  variable: "--font-lora",
+});
+
+const SITE_URL = "https://gocbep.vercel.app";
+const SITE_NAME = "Góc Bếp";
+const SITE_TITLE = "Góc Bếp – Món quê trên phố";
+const SITE_DESCRIPTION =
+  "Video nấu ăn món quê dân dã mỗi ngày kèm công thức chi tiết từng bước, nguyên liệu dễ tìm, dễ làm tại nhà từ kênh YouTube Góc Bếp.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gocbep.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Góc Bếp – Món quê trên phố",
+    default: `${SITE_TITLE} | Video & công thức nấu ăn`,
     template: "%s | Góc Bếp",
   },
-  description:
-    "Kênh Góc Bếp chia sẻ video nấu ăn món quê giản dị giữa lòng phố thị. Xem video mới nhất và tìm hiểu về kênh Góc Bếp.",
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Góc Bếp – Món quê trên phố",
-    description:
-      "Kênh Góc Bếp chia sẻ video nấu ăn món quê giản dị giữa lòng phố thị.",
-    images: ["/logo.png"],
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    locale: "vi_VN",
+    images: [{ url: "/logo.png", width: 512, height: 512, alt: "Logo Góc Bếp" }],
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
   },
   // Xác minh quyền sở hữu domain này trong Google Search Console — cần cho
   // bước "Authorized domain" khi publish OAuth consent screen của dự án
@@ -32,6 +70,32 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport: Viewport = {
+  themeColor: "#FFF8EC",
+  width: "device-width",
+  initialScale: 1,
+};
+
+// Structured data toàn site: giúp Google hiểu thương hiệu + hiển thị tên site.
+const siteJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    alternateName: SITE_TITLE,
+    url: SITE_URL,
+    inLanguage: "vi-VN",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo.png`,
+    sameAs: [CHANNEL_URL],
+  },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -40,8 +104,13 @@ export default function RootLayout({
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
   return (
-    <html lang="vi">
-      <body className="flex min-h-screen flex-col font-display">
+    <html lang="vi" className={`${beVietnam.variable} ${lora.variable}`}>
+      <body className="flex min-h-screen flex-col font-sans antialiased">
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+        />
         {/* Chỉ tải script AdSense khi đã cấu hình NEXT_PUBLIC_ADSENSE_CLIENT
             trên Vercel — xem README.md mục "Bật quảng cáo (AdSense)". */}
         {adsenseClient && (

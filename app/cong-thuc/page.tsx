@@ -7,7 +7,9 @@ import AdSlot from "@/components/AdSlot";
 
 export const metadata: Metadata = {
   title: "Công thức nấu ăn",
-  description: "Toàn bộ công thức nấu ăn chi tiết từ kênh Góc Bếp.",
+  description:
+    "Tổng hợp công thức nấu ăn món quê chi tiết từng bước: nguyên liệu, cách làm, mẹo nhỏ — từ kênh Góc Bếp, dễ làm tại nhà.",
+  alternates: { canonical: "/cong-thuc" },
 };
 
 export const revalidate = 1800;

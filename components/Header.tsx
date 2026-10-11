@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CHANNEL_URL } from "@/lib/youtube";
+import SearchBox from "@/components/SearchBox";
 
 const NAV_LINKS = [
   { href: "/", label: "Trang chủ" },
@@ -9,6 +10,8 @@ const NAV_LINKS = [
   { href: "/san-pham", label: "Sản phẩm" },
   { href: "/gioi-thieu", label: "Giới thiệu" },
 ];
+
+// Dưới breakpoint lg ô tìm kiếm bị ẩn khỏi header -> thêm link "Tìm kiếm" vào menu.
 
 export default function Header() {
   return (
@@ -29,6 +32,8 @@ export default function Header() {
           </div>
         </Link>
 
+        <SearchBox size="sm" className="hidden w-40 lg:block xl:w-44" />
+
         <nav className="-mx-4 flex items-center gap-1 overflow-x-auto whitespace-nowrap px-4 pb-1 text-sm font-medium [scrollbar-width:none] sm:mx-0 sm:justify-end sm:gap-2 sm:overflow-visible sm:px-0 sm:pb-0 [&::-webkit-scrollbar]:hidden">
           {NAV_LINKS.map((link) => (
             <Link
@@ -39,6 +44,12 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/tim-kiem"
+            className="rounded-full px-2 py-2 text-coffee/80 transition hover:bg-turmeric/15 hover:text-chili sm:px-3 lg:hidden"
+          >
+            🔍 Tìm kiếm
+          </Link>
           <a
             href={CHANNEL_URL}
             target="_blank"

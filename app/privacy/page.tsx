@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Chính sách quyền riêng tư",
   description: "Chính sách quyền riêng tư của website Góc Bếp.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

@@ -2,15 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap");
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #fff8ec;
-  color: #4a2e1f;
+  background-color: #fbf8f3;
+  color: #2b2118;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgba(200, 55, 45, 0.18);
+}
+
+:focus-visible {
+  outline: 2px solid #c8372d;
+  outline-offset: 2px;
 }
 
 @media print {

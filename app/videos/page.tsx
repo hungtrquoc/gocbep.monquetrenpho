@@ -5,7 +5,8 @@ import AdSlot from "@/components/AdSlot";
 
 export const metadata: Metadata = {
   title: "Video",
-  description: "Toàn bộ video mới nhất từ kênh YouTube Góc Bếp.",
+  description: "Video nấu ăn mới nhất từ kênh YouTube Góc Bếp — món quê dân dã, cập nhật mỗi ngày.",
+  alternates: { canonical: "/videos" },
 };
 
 export default async function VideosPage() {

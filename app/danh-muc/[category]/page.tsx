@@ -27,6 +27,7 @@ export function generateMetadata({
   return {
     title: `Công thức ${category}`,
     description: `Toàn bộ công thức ${category} chi tiết từ kênh Góc Bếp — hướng dẫn từng bước, dễ làm tại nhà.`,
+    alternates: { canonical: `/danh-muc/${params.category}` },
   };
 }
 

@@ -6,6 +6,7 @@ import AdSlot from "@/components/AdSlot";
 export const metadata: Metadata = {
   title: "Sản phẩm Góc Bếp gợi ý",
   description: "Dụng cụ bếp và nguyên liệu được Góc Bếp sử dụng và gợi ý.",
+  alternates: { canonical: "/san-pham" },
 };
 
 export default function ProductsPage() {

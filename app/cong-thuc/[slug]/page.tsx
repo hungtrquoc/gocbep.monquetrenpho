@@ -27,15 +27,31 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const recipe = getRecipeBySlug(params.slug);
   if (!recipe) return {};
+  const url = `/cong-thuc/${recipe.slug}`;
   return {
     title: recipe.title,
     description: recipe.excerpt,
     keywords: recipe.keywords,
+    alternates: { canonical: url },
+    // Bản nháp chỉ xem qua link trực tiếp - không cho Google index.
+    ...(recipe.published ? {} : { robots: { index: false, follow: false } }),
     openGraph: {
       title: recipe.title,
       description: recipe.excerpt,
-      images: [recipe.coverImage],
+      url,
+      siteName: "Góc Bếp",
+      locale: "vi_VN",
+      images: [{ url: recipe.coverImage, alt: recipe.title }],
       type: "article",
+      publishedTime: recipe.updatedAt,
+      modifiedTime: recipe.updatedAt,
+      section: recipe.category,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: recipe.title,
+      description: recipe.excerpt,
+      images: [recipe.coverImage],
     },
   };
 }
@@ -62,15 +78,39 @@ export default async function RecipeDetailPage({ params }: { params: { slug: str
   const relatedProducts = getProductsForRecipe(recipe.slug);
   const siteUrl = "https://gocbep.vercel.app";
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Trang chủ", item: `${siteUrl}/` },
+      { "@type": "ListItem", position: 2, name: "Công thức", item: `${siteUrl}/cong-thuc` },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: recipe.category,
+        item: `${siteUrl}/danh-muc/${CATEGORY_SLUGS[recipe.category]}`,
+      },
+      { "@type": "ListItem", position: 4, name: recipe.title, item: `${siteUrl}/cong-thuc/${recipe.slug}` },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Recipe",
     name: recipe.title,
     description: recipe.excerpt,
     image: [recipe.coverImage],
+    inLanguage: "vi-VN",
+    mainEntityOfPage: `${siteUrl}/cong-thuc/${recipe.slug}`,
     author: {
       "@type": "Organization",
       name: "Góc Bếp – Món quê trên phố",
+      url: siteUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Góc Bếp",
+      logo: { "@type": "ImageObject", url: `${siteUrl}/logo.png` },
     },
     datePublished: recipe.updatedAt,
     recipeCategory: recipe.category,
@@ -105,6 +145,11 @@ export default async function RecipeDetailPage({ params }: { params: { slug: str
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
       {!recipe.published && (
@@ -156,7 +201,14 @@ export default async function RecipeDetailPage({ params }: { params: { slug: str
       </div>
 
       <div className="relative mt-6 aspect-video w-full overflow-hidden rounded-2xl bg-turmeric/10">
-        <Image src={recipe.coverImage} alt={recipe.title} fill className="object-cover" />
+        <Image
+          src={recipe.coverImage}
+          alt={`${recipe.title} - ${recipe.category} Góc Bếp`}
+          fill
+          priority
+          sizes="(max-width: 768px) 100vw, 768px"
+          className="object-cover"
+        />
       </div>
 
       {recipe.videoId && (
@@ -164,6 +216,7 @@ export default async function RecipeDetailPage({ params }: { params: { slug: str
           <iframe
             src={`https://www.youtube.com/embed/${recipe.videoId}`}
             title={recipe.title}
+            loading="lazy"
             className="absolute inset-0 h-full w-full"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Điều khoản sử dụng",
   description: "Điều khoản sử dụng website Góc Bếp.",
+  alternates: { canonical: "/dieu-khoan" },
 };
 
 export default function TermsPage() {

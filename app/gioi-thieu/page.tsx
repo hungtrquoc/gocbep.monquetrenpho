@@ -5,6 +5,7 @@ import { CHANNEL_URL } from "@/lib/youtube";
 export const metadata: Metadata = {
   title: "Giới thiệu",
   description: "Giới thiệu về kênh Góc Bếp – Món quê trên phố.",
+  alternates: { canonical: "/gioi-thieu" },
 };
 
 export default function AboutPage() {

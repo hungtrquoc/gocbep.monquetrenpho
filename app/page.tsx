@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { getLatestVideos, CHANNEL_URL } from "@/lib/youtube";
@@ -10,6 +11,11 @@ import ProductCard from "@/components/ProductCard";
 import AdSlot from "@/components/AdSlot";
 
 export const revalidate = 1800;
+
+// Canonical đặt RIÊNG từng trang (không đặt ở layout vì sẽ bị mọi trang con kế thừa).
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default async function HomePage() {
   const videos = await getLatestVideos();
