@@ -13,7 +13,7 @@ export default function ProductsPage() {
   const products = getAllProducts();
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-14">
+    <div className="mx-auto max-w-6xl px-4 py-10">
       <div className="mb-10 text-center">
         <h1 className="font-display text-3xl font-bold text-coffee">Sản phẩm Góc Bếp gợi ý</h1>
         <p className="mx-auto mt-2 max-w-xl text-coffee/60">

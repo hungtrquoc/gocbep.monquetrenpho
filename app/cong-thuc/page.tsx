@@ -22,7 +22,7 @@ export default async function RecipesPage() {
   );
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-14">
+    <div className="mx-auto max-w-6xl px-4 py-10">
       <div className="mb-8 text-center">
         <h1 className="font-display text-3xl font-bold text-coffee">Công thức nấu ăn</h1>
         <p className="mt-2 text-coffee/60">

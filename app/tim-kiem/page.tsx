@@ -56,7 +56,7 @@ export default async function SearchPage({
   const total = recipes.length + videos.length + products.length;
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-10">
+    <div className="mx-auto max-w-6xl px-4 py-10">
       <h1 className="font-display text-3xl font-bold text-coffee">Tìm kiếm</h1>
       <SearchBox defaultValue={query} className="mt-4 max-w-xl" autoFocus={!query} />
 

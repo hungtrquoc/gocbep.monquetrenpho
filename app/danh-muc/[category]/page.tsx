@@ -42,7 +42,7 @@ export default async function CategoryPage({
   const recipes = await filterAvailableRecipes(getRecipesByCategory(category));
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-14">
+    <div className="mx-auto max-w-6xl px-4 py-10">
       <nav className="mb-3 text-xs text-coffee/50">
         <Link href="/cong-thuc" className="hover:text-chili hover:underline">
           Công thức

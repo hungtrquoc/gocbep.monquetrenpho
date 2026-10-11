@@ -11,55 +11,51 @@ const NAV_LINKS = [
   { href: "/gioi-thieu", label: "Giới thiệu" },
 ];
 
-// Dưới breakpoint lg ô tìm kiếm bị ẩn khỏi header -> thêm link "Tìm kiếm" vào menu.
-
+// Kiểu "báo/tạp chí": hàng trên là thương hiệu + tìm kiếm + nút YouTube,
+// hàng dưới là menu chữ hoa nhỏ ngăn cách bằng đường kẻ mảnh.
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-turmeric/20 bg-cream/90 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl flex-col gap-1 px-4 py-2 sm:flex-row sm:items-center sm:justify-between sm:py-3">
+    <header className="sticky top-0 z-50 border-b border-coffee/15 bg-cream/95 backdrop-blur">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link href="/" className="flex items-center gap-3">
-          <Image
-            src="/logo.png"
-            alt="Logo Góc Bếp"
-            width={44}
-            height={44}
-            className="rounded-full"
-            priority
-          />
-          <div className="whitespace-nowrap leading-tight">
-            <p className="font-display text-lg font-bold text-chili">Góc Bếp</p>
-            <p className="text-xs text-coffee/70">Món quê trên phố</p>
+          <Image src="/logo.png" alt="Logo Góc Bếp" width={44} height={44} className="rounded-full" priority />
+          <div className="whitespace-nowrap leading-none">
+            <p className="font-display text-2xl font-bold tracking-tight text-coffee">Góc Bếp</p>
+            <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-chili">
+              Món quê trên phố
+            </p>
           </div>
         </Link>
 
-        <SearchBox size="sm" className="hidden w-40 lg:block xl:w-44" />
-
-        <nav className="-mx-4 flex items-center gap-1 overflow-x-auto whitespace-nowrap px-4 pb-1 text-sm font-medium [scrollbar-width:none] sm:mx-0 sm:justify-end sm:gap-2 sm:overflow-visible sm:px-0 sm:pb-0 [&::-webkit-scrollbar]:hidden">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="rounded-full px-2 py-2 text-coffee/80 transition hover:bg-turmeric/15 hover:text-chili sm:px-3"
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Link
-            href="/tim-kiem"
-            className="rounded-full px-2 py-2 text-coffee/80 transition hover:bg-turmeric/15 hover:text-chili sm:px-3 lg:hidden"
-          >
-            🔍 Tìm kiếm
-          </Link>
+        <div className="flex items-center gap-3">
+          <SearchBox size="sm" className="hidden w-64 md:block" />
           <a
             href={CHANNEL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-1 rounded-full bg-chili px-4 py-2 text-white shadow-sm transition hover:bg-chili/90"
+            className="whitespace-nowrap rounded-full bg-chili px-4 py-2 text-sm font-semibold text-white transition hover:bg-chili/90"
           >
-            Kênh YouTube
+            YouTube
           </a>
-        </nav>
+        </div>
       </div>
+
+      <nav className="border-t border-coffee/10">
+        <div className="mx-auto flex max-w-6xl items-center gap-1 overflow-x-auto whitespace-nowrap px-4 text-[13px] font-semibold uppercase tracking-wider [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {NAV_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="px-3 py-2.5 text-coffee/75 transition hover:text-chili first:pl-0"
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link href="/tim-kiem" className="px-3 py-2.5 text-coffee/75 transition hover:text-chili md:hidden">
+            Tìm kiếm
+          </Link>
+        </div>
+      </nav>
     </header>
   );
 }

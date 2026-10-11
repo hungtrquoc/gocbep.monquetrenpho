@@ -13,16 +13,17 @@ export default async function VideosPage() {
   const videos = await getLatestVideos();
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-14">
-      <div className="mb-8 text-center">
-        <h1 className="font-display text-3xl font-bold text-coffee">Video của Góc Bếp</h1>
-        <p className="mt-2 text-coffee/60">
+    <div className="mx-auto max-w-6xl px-4 py-10">
+      <div className="mb-8 border-b-2 border-coffee pb-3">
+        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-chili">YouTube</p>
+        <h1 className="mt-1 font-display text-3xl font-bold text-coffee">Video của Góc Bếp</h1>
+        <p className="mt-1 text-sm text-coffee/60">
           Danh sách được lấy tự động từ kênh YouTube Góc Bếp (cập nhật mỗi giờ).
         </p>
       </div>
 
       {videos.length > 0 ? (
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           {videos.map((video) => (
             <VideoCard key={video.id} video={video} />
           ))}
