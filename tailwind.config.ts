@@ -12,7 +12,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#FBF8F3",
+        cream: "#FAF6F0", // chỉ dùng cho các dải nền phụ; nền trang là trắng
         turmeric: "#B8956A", // be/nâu nhạt - dùng làm viền/nền nhạt (opacity thấp)
         chili: "#C8372D",
         leaf: "#4C7A3D",

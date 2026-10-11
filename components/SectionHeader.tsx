@@ -1,29 +1,30 @@
 import Link from "next/link";
 
-/** Tiêu đề khối kiểu tạp chí: nhãn đỏ nhỏ + tiêu đề serif + đường kẻ đậm bên dưới. */
+/** Tiêu đề khối: thanh đỏ + tiêu đề serif, nút "Xem thêm" đặc bên phải (học theo Just One Cookbook). */
 export default function SectionHeader({
-  kicker,
   title,
   subtitle,
   href,
-  linkLabel = "Xem tất cả",
+  linkLabel = "Xem thêm",
 }: {
-  kicker: string;
+  kicker?: string; // giữ để tương thích, không còn hiển thị
   title: string;
   subtitle?: string;
   href?: string;
   linkLabel?: string;
 }) {
   return (
-    <div className="mb-6 flex items-end justify-between gap-4 border-b-2 border-coffee pb-3">
-      <div>
-        <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-chili">{kicker}</p>
-        <h2 className="mt-1 font-display text-2xl font-bold text-coffee sm:text-3xl">{title}</h2>
-        {subtitle && <p className="mt-1 text-sm text-coffee/60">{subtitle}</p>}
+    <div className="mb-5 flex items-center justify-between gap-4">
+      <div className="border-l-4 border-chili pl-3">
+        <h2 className="font-display text-2xl font-bold leading-tight text-coffee sm:text-[28px]">{title}</h2>
+        {subtitle && <p className="mt-0.5 text-sm text-coffee/60">{subtitle}</p>}
       </div>
       {href && (
-        <Link href={href} className="whitespace-nowrap text-sm font-semibold text-chili hover:underline">
-          {linkLabel} →
+        <Link
+          href={href}
+          className="whitespace-nowrap rounded bg-coffee px-4 py-2 text-xs font-bold uppercase tracking-wide text-white transition hover:bg-chili"
+        >
+          {linkLabel} ›
         </Link>
       )}
     </div>
