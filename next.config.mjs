@@ -1,5 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Cache dài cho file tĩnh trong /public (logo, ảnh) trên Edge CDN; file trong
+  // /_next/static (JS/CSS/font có hash) Vercel đã tự gắn "immutable".
+  async headers() {
+    return [
+      {
+        source: "/:path*.(png|jpg|jpeg|webp|avif|svg|ico)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=86400, s-maxage=31536000, stale-while-revalidate=604800",
+          },
+        ],
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {

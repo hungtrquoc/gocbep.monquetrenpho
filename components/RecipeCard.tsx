@@ -1,15 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Recipe } from "@/lib/recipes";
+import { cardThumb } from "@/lib/image";
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   return (
     <Link href={`/cong-thuc/${recipe.slug}`} className="group flex h-full flex-col">
       <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-coffee/10">
         <Image
-          src={recipe.coverImage}
+          src={cardThumb(recipe.coverImage)}
           alt={recipe.title}
           fill
+          unoptimized
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition duration-500 group-hover:scale-105"
         />

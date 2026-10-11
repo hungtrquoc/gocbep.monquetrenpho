@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Recipe } from "@/lib/recipes";
+import { cardThumb } from "@/lib/image";
 
 /**
  * Thẻ công thức dạng HÀNG (ảnh nhỏ bên trái, chữ bên phải) - cố ý KHÁC thẻ video
@@ -18,9 +19,10 @@ export default function RecipeRow({ recipe }: { recipe: Recipe }) {
     >
       <div className="relative h-28 w-28 flex-none overflow-hidden rounded-md bg-coffee/10 sm:h-32 sm:w-32">
         <Image
-          src={recipe.coverImage}
+          src={cardThumb(recipe.coverImage)}
           alt={recipe.title}
           fill
+          unoptimized
           sizes="128px"
           className="object-cover"
         />

@@ -10,7 +10,7 @@ import { CHANNEL_URL } from "@/lib/youtube";
 // subset tiếng Việt - thay cho @import url(fonts.googleapis.com) cũ trong CSS.
 const beVietnam = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "600", "700"],
   display: "swap",
   variable: "--font-be-vietnam",
 });
@@ -18,7 +18,7 @@ const beVietnam = Be_Vietnam_Pro({
 // Chữ có chân (serif) cho tiêu đề - phong cách tạp chí ẩm thực; thân bài dùng Be Vietnam Pro.
 const lora = Lora({
   subsets: ["latin", "vietnamese"],
-  weight: ["500", "600", "700"],
+  weight: ["600", "700"],
   display: "swap",
   variable: "--font-lora",
 });
@@ -105,6 +105,12 @@ export default function RootLayout({
 
   return (
     <html lang="vi" className={`${beVietnam.variable} ${lora.variable}`}>
+      <head>
+        {/* Ảnh thumbnail (LCP) nằm ở i.ytimg.com: mở sẵn kết nối DNS+TLS ngay từ đầu,
+            tiết kiệm ~0.5-1s trên mạng chậm. */}
+        <link rel="preconnect" href="https://i.ytimg.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
+      </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <script
           type="application/ld+json"
@@ -118,7 +124,7 @@ export default function RootLayout({
             async
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
             crossOrigin="anonymous"
-            strategy="afterInteractive"
+            strategy="lazyOnload"
           />
         )}
         <Header />

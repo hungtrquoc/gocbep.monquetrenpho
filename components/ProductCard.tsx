@@ -14,6 +14,7 @@ export default function ProductCard({ product }: { product: Product }) {
           src={product.image}
           alt={product.name}
           fill
+          unoptimized
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition duration-300 group-hover:scale-105"
         />

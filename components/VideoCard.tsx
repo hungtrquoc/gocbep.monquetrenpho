@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { YoutubeVideo } from "@/lib/youtube";
 import { formatVideoDate } from "@/lib/youtube";
+import { cardThumb } from "@/lib/image";
 
 // Thẻ VIDEO: ảnh 16:9 luôn có nút phát tròn ở giữa + nhãn YouTube -> nhìn là biết "bấm để xem video".
 export default function VideoCard({
@@ -15,9 +16,10 @@ export default function VideoCard({
     <a href={video.url} target="_blank" rel="noopener noreferrer" className="group flex h-full flex-col">
       <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-coffee/10">
         <Image
-          src={video.thumbnailUrl}
+          src={cardThumb(video.thumbnailUrl)}
           alt={video.title}
           fill
+          unoptimized
           priority={priority}
           sizes="(max-width: 768px) 50vw, 25vw"
           className="object-cover transition duration-500 group-hover:scale-105"

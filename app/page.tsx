@@ -45,7 +45,7 @@ export default async function HomePage() {
         {homeVideos.length > 0 ? (
           <div className="grid grid-cols-2 gap-x-4 gap-y-7 lg:grid-cols-4">
             {homeVideos.map((v, i) => (
-              <VideoCard key={v.id} video={v} priority={i < 4} />
+              <VideoCard key={v.id} video={v} priority={i < 2} />
             ))}
           </div>
         ) : (
