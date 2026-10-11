@@ -24,7 +24,9 @@ export default async function HomePage() {
   return (
     <div>
       {/* Giới thiệu gọn: 1 dải mỏng, để nội dung (video) hiện ngay màn hình đầu */}
-      <section className="border-b border-turmeric/20 bg-turmeric/10">
+      {/* Mobile: ẩn khỏi màn hình (vẫn giữ h1 cho SEO/đọc màn hình) vì header đã có
+          logo + nút Kênh YouTube, tránh lặp lại và chiếm chỗ của video. */}
+      <section className="sr-only border-b border-turmeric/20 bg-turmeric/10 sm:not-sr-only">
         <div className="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
             <Image
