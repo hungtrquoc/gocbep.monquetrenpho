@@ -65,5 +65,19 @@
       "banh-gio-lam-o-nha-ngon-re-hon-ngoai-tiem",
       "meo-nho-nhung-giup-lam-banh-bot-loc-cuc-don-gian"
     ]
+  },
+  {
+    "slug": "shopee-viet-nam-hot-deals-best-prices",
+    "name": "Shopee Việt Nam | Hot Deals, Best Prices",
+    "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mr5tx4f5ul8l5c.webp",
+    "price": "",
+    "description": "",
+    "affiliateUrl": "https://s.shopee.vn/6fhyDDTlRZ",
+    "category": "Nguyên liệu & Gia vị",
+    "platform": "Shopee",
+    "relatedRecipeSlugs": [
+      "bun-ca-ro-phi-nau-don-gian",
+      "bun-cha-ha-noi-bang-noi-chien-khong-dau"
+    ]
   }
 ]
