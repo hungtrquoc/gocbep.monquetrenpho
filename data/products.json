@@ -51,5 +51,19 @@
     "relatedRecipeSlugs": [
       "chan-ga-rang-muoi-ngon-hon-ngoai-hang"
     ]
+  },
+  {
+    "slug": "bot-gao-bot-gao-tai-ky-tui-400gr",
+    "name": "Bột Gạo, Bột Gạo Tài Ký túi 400gr",
+    "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-moo6xm99z1n278.webp",
+    "price": "",
+    "description": "",
+    "affiliateUrl": "https://s.shopee.vn/4fwtfbo03W",
+    "category": "Nguyên liệu & Gia vị",
+    "platform": "Shopee",
+    "relatedRecipeSlugs": [
+      "banh-gio-lam-o-nha-ngon-re-hon-ngoai-tiem",
+      "meo-nho-nhung-giup-lam-banh-bot-loc-cuc-don-gian"
+    ]
   }
 ]
