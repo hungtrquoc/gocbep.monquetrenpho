@@ -1505,5 +1505,61 @@
     ],
     "published": true,
     "updatedAt": "2026-09-11"
+  },
+  {
+    "slug": "canh-ga-chien-nuoc-mam-nhanh-gon-chuan-vi",
+    "videoId": "4u6cIxA0mK8",
+    "title": "Cánh Gà Chiên Nước Mắm Nhanh Gọn Chuẩn Vị",
+    "excerpt": "Cánh gà chiên nước mắm làm theo bí quyết luộc sơ trước khi chiên giúp thịt mềm mọng bên trong và da giòn rụm bên ngoài. Kết hợp cùng sốt pha sẵn tiện lợi tạo nên món ăn óng ả, đưa cơm chỉ trong nháy mắt.",
+    "coverImage": "https://i.ytimg.com/vi/4u6cIxA0mK8/hqdefault.jpg",
+    "category": "Món chính",
+    "keywords": [
+      "cách làm cánh gà chiên nước mắm",
+      "cánh gà chiên nước mắm sốt sẵn",
+      "món ngon từ cánh gà"
+    ],
+    "servings": "3-4 người ăn",
+    "prepTime": "15 phút",
+    "cookTime": "20 phút",
+    "ingredients": [
+      "1kg cánh gà khúc giữa",
+      "2 gói sốt cánh gà chiên nước mắm pha sẵn",
+      "3 muỗng canh bột mì (để rửa gà)",
+      "1 củ hành tây",
+      "2 trái ớt sừng",
+      "4 nhánh hành lá",
+      "1 củ gừng nhỏ",
+      "5 củ hành tím",
+      "1 củ tỏi",
+      "Dầu ăn, muối"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế cánh gà",
+        "description": "Cánh gà cho vào thau cùng bột mì và nước, bóp kỹ để làm sạch nhớt và khử mùi hôi, sau đó rửa lại nhiều lần với nước sạch rồi để ráo."
+      },
+      {
+        "title": "Luộc sơ cánh gà",
+        "description": "Đun sôi một nồi nước với gừng đập dập, hành tím và một chút muối. Thả cánh gà vào luộc chín khoảng 50% thì vớt ra rổ để thật ráo nước."
+      },
+      {
+        "title": "Chiên cánh gà",
+        "description": "Đun nóng nhiều dầu ăn trong chảo, thả cánh gà vào chiên ngập dầu trên lửa vừa đến khi lớp da vàng giòn đều thì vớt ra để ráo dầu."
+      },
+      {
+        "title": "Xào rau củ và đảo sốt",
+        "description": "Phi thơm hành tỏi băm trên chảo mới, cho hành tây cắt múi cau, ớt sừng và hành lá cắt khúc vào xào nhanh tay trên lửa lớn."
+      },
+      {
+        "title": "Hoàn thành món ăn",
+        "description": "Trút toàn bộ cánh gà chiên vào chảo rau củ, rưới sốt chiên nước mắm vào và đảo đều tay trong 1-2 phút cho sốt ngấm đều rồi tắt bếp, dọn ra đĩa thưởng thức."
+      }
+    ],
+    "tips": [
+      "Luộc sơ cánh gà giúp thịt chín đều và giữ nước ngọt bên trong, khi chiên nhanh vàng hơn và không bị khô cứng.",
+      "Không nên đảo sốt trên lửa lớn quá lâu vì sốt có đường dễ bị cháy đắng."
+    ],
+    "published": true,
+    "updatedAt": "2026-10-12"
   }
 ]
