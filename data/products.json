@@ -92,5 +92,19 @@
     "relatedRecipeSlugs": [
       "canh-ga-chien-nuoc-mam-nhanh-gon-chuan-vi"
     ]
+  },
+  {
+    "slug": "bot-rau-cau-don-agar-25gr",
+    "name": "Bột rau câu dòn AGAR 25gr",
+    "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-820l4-miswikaczksie3.webp",
+    "price": "",
+    "description": "",
+    "affiliateUrl": "https://s.shopee.vn/8AWnc762wi",
+    "category": "Nguyên liệu & Gia vị",
+    "platform": "Shopee",
+    "relatedRecipeSlugs": [
+      "canh-ga-chien-nuoc-mam-nhanh-gon-chuan-vi",
+      "rau-cau-khoai-mon-soi-gion-khong-tach-lop"
+    ]
   }
 ]
