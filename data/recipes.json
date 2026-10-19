@@ -1778,5 +1778,61 @@
     ],
     "published": true,
     "updatedAt": "2026-10-19"
+  },
+  {
+    "slug": "banh-cuon-trang-noi-hoi-vo-mong-dai-nhan-thit-nam",
+    "videoId": "sneZQFxGzUw",
+    "title": "Bánh Cuốn Tráng Nồi Hơi Vỏ Mỏng Dai Nhân Thịt Nấm",
+    "excerpt": "Bánh cuốn nóng hổi tự tráng tại nhà với lớp vỏ mỏng mềm, dai nhẹ ôm trọn nhân thịt băm xào nấm giòn rụm. Thưởng thức cùng chả lụa, rau thơm và nước mắm chua ngọt thơm lừng.",
+    "coverImage": "https://i.ytimg.com/vi/sneZQFxGzUw/hqdefault.jpg",
+    "category": "Bánh & Ăn vặt",
+    "keywords": [
+      "cách làm bánh cuốn",
+      "bánh cuốn nóng",
+      "bột bánh cuốn pha sẵn",
+      "bánh cuốn tráng nồi hơi"
+    ],
+    "servings": "3-4 người ăn",
+    "prepTime": "35 phút",
+    "cookTime": "30 phút",
+    "ingredients": [
+      "400g bột bánh cuốn pha sẵn",
+      "1 lít nước lọc",
+      "300g thịt nạc heo xay",
+      "50g nấm mèo khô ngâm nở băm nhỏ",
+      "3 củ hành tím băm",
+      "1 củ tỏi băm",
+      "3 nhánh hành lá thái nhỏ",
+      "Gia vị: hạt nêm, đường, nước mắm, tiêu xay, dầu ăn",
+      "Ăn kèm: chả lụa, nem chua, giá đỗ chần, dưa leo, rau thơm, hành phi, ớt băm"
+    ],
+    "steps": [
+      {
+        "title": "Pha bột bánh",
+        "description": "Hòa tan 400g bột bánh cuốn cùng 1 lít nước lọc và 2 muỗng canh dầu ăn. Khuấy đều rồi để bột nghỉ khoảng 30 phút."
+      },
+      {
+        "title": "Xào nhân bánh",
+        "description": "Phi thơm hành tím và tỏi băm, cho thịt nạc xay vào xào săn. Nêm đường, hạt nêm, nước mắm vừa ăn rồi trút nấm mèo băm nhỏ vào đảo chín, rắc thêm hành lá và tắt bếp."
+      },
+      {
+        "title": "Căng vải và chuẩn bị nồi",
+        "description": "Bọc chặt vải tráng bánh lên miệng nồi hấp nước sôi, siết chặt vòng kim loại để bề mặt vải phẳng căng. Đục vài lỗ nhỏ ở mép vải để hơi nước thoát lên."
+      },
+      {
+        "title": "Tráng bánh và cuộn nhân",
+        "description": "Múc một vá bột tráng đều một lớp mỏng lên mặt vải, đậy nắp hấp chín 2-3 phút cho bột phồng. Dùng thanh tre nhấc bánh ra đĩa thoa dầu, cho nhân vào giữa rồi nhẹ nhàng cuộn tròn lại."
+      },
+      {
+        "title": "Pha nước mắm và thưởng thức",
+        "description": "Pha nước mắm chua ngọt cùng đường, chanh, tỏi ớt băm. Cắt bánh cuốn ra đĩa, rắc hành phi lên trên, ăn kèm chả, nem chua, rau sống và nước mắm."
+      }
+    ],
+    "tips": [
+      "Phải siết thật căng mặt vải tráng bánh để khi đổ bột bánh không bị chùng đọng vũng và dễ lấy ra nguyên vẹn.",
+      "Thoa một lớp dầu ăn mỏng lên bề mặt đĩa đặt bánh để bánh không bị dính khi cuốn."
+    ],
+    "published": true,
+    "updatedAt": "2026-10-19"
   }
 ]
