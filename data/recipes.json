@@ -1668,5 +1668,60 @@
     ],
     "published": true,
     "updatedAt": "2026-10-19"
+  },
+  {
+    "slug": "banh-bo-thot-not-hap-nuoc-cot-dua",
+    "videoId": "hAucZa810Sk",
+    "title": "Bánh Bò Thốt Nốt Hấp Nước Cốt Dừa",
+    "excerpt": "Món bánh bò thốt nốt hấp khuôn lá chuối với sắc vàng ươm tự nhiên, thớ bánh mềm xốp nhiều rễ tre. Chấm cùng nước cốt dừa béo ngậy tạo nên món bánh truyền thống thơm ngon khó cưỡng.",
+    "coverImage": "https://i.ytimg.com/vi/hAucZa810Sk/hqdefault.jpg",
+    "category": "Bánh & Ăn vặt",
+    "keywords": [
+      "bánh bò thốt nốt",
+      "cách làm bánh bò",
+      "bánh bò hấp",
+      "bột bánh bò taky"
+    ],
+    "servings": "4-6 người ăn",
+    "prepTime": "1 giờ 30 phút",
+    "cookTime": "30 phút",
+    "ingredients": [
+      "500g bột bánh bò pha sẵn (kèm men)",
+      "350g đường thốt nốt",
+      "350ml nước cốt dừa",
+      "350ml nước ấm (chia 100ml kích men, 250ml nhồi bột)",
+      "1/2 muỗng cà phê muối",
+      "1 muỗng cà phê đường cát",
+      "Dừa nạo sợi",
+      "Lá chuối làm khuôn"
+    ],
+    "steps": [
+      {
+        "title": "Kích hoạt men và nhồi bột",
+        "description": "Hòa gói men khô với 1 muỗng cà phê đường cát và 100ml nước ấm, để 10 phút cho nở bọt. Cho men vào bột cùng 250ml nước ấm, nhồi đều rồi bọc kín ủ 1 tiếng."
+      },
+      {
+        "title": "Nấu nước đường thốt nốt",
+        "description": "Băm nhỏ đường thốt nốt, cho vào nồi cùng nước cốt dừa và muối. Đun nhỏ lửa khuấy tan đường rồi để nguội bớt còn khoảng 40 độ C."
+      },
+      {
+        "title": "Pha bột ủ lần hai",
+        "description": "Đổ nước đường thốt nốt ấm vào thau bột đã nở, khuấy đều nhẹ tay rồi bọc kín ủ tiếp 30 phút cho bột nổi nhiều bọt khí."
+      },
+      {
+        "title": "Làm khuôn lá chuối",
+        "description": "Lá chuối chần sơ nước sôi cho mềm, lau khô rồi xếp chồng 2 lớp, gập 4 góc tạo thành khuôn chén vuông và ghim cố định."
+      },
+      {
+        "title": "Hấp bánh bò",
+        "description": "Đun sôi nước trong xửng hấp, đặt khuôn vào làm nóng rồi rót bột vào từng khuôn. Hấp lửa lớn khoảng 5-7 phút cho bánh nở thì mở nắp rắc dừa nạo, đậy nắp hấp thêm vài phút đến khi bánh chín hoàn toàn."
+      }
+    ],
+    "tips": [
+      "Nước đường thốt nốt chỉ nên ấm khoảng 40 độ C khi cho vào bột, nếu quá nóng sẽ làm chết men khiến bánh không nở rễ tre.",
+      "Hấp bánh trên lửa lớn liên tục và bọc khăn ở nắp xửng để nước không nhỏ giọt làm rỗ mặt bánh."
+    ],
+    "published": true,
+    "updatedAt": "2026-10-19"
   }
 ]
