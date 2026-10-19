@@ -1723,5 +1723,60 @@
     ],
     "published": true,
     "updatedAt": "2026-10-19"
+  },
+  {
+    "slug": "banh-mi-chien-chao-thom-bo-gion-xop",
+    "videoId": "8-a11xYidMQ",
+    "title": "Bánh Mì Chiên Chảo Thơm Bơ Giòn Xốp",
+    "excerpt": "Món bánh mì chiên chảo thơm lừng hương bơ sữa là lựa chọn tuyệt vời cho những ai yêu thích làm bánh nhưng không có sẵn lò nướng. Ổ bánh nở phồng đẹp mắt, lớp vỏ giòn nhẹ bọc lấy phần ruột mềm xốp đặc ruột, chấm cùng sữa đặc ngọt béo vô cùng hấp dẫn.",
+    "coverImage": "https://i.ytimg.com/vi/8-a11xYidMQ/hqdefault.jpg",
+    "category": "Bánh & Ăn vặt",
+    "keywords": [
+      "cách làm bánh mì chiên",
+      "bánh mì không cần lò nướng",
+      "bánh mì chiên bơ sữa",
+      "bánh mì chảo"
+    ],
+    "servings": "4-5 người ăn",
+    "prepTime": "45 phút",
+    "cookTime": "20 phút",
+    "ingredients": [
+      "500g bột mì làm bánh mì (bột số 13)",
+      "10g men nở khô (instant dry yeast)",
+      "40g đường cát trắng",
+      "1 muỗng cà phê muối",
+      "25g bơ thực vật",
+      "180ml sữa tươi không đường",
+      "130ml nước lọc",
+      "1 quả trứng gà",
+      "2 muỗng cà phê giấm trắng",
+      "4 muỗng canh dầu ăn (để nhồi bột)",
+      "Dầu ăn để chiên bánh",
+      "Sữa đặc ăn kèm"
+    ],
+    "steps": [
+      {
+        "title": "Trộn bột khô",
+        "description": "Cho bột mì vào thau lớn, thêm đường, muối và gói men nở khô vào rồi dùng vá gỗ trộn đều các nguyên liệu khô lại với nhau."
+      },
+      {
+        "title": "Nhồi bột và ủ lần một",
+        "description": "Thêm bơ thực vật, nước lọc, sữa tươi không đường, trứng gà, giấm và 4 muỗng canh dầu ăn vào thau bột. Dùng tay nhồi đều cho tới khi khối bột mịn dẻo, không dính tay. Bọc kín miệng thau bằng màng bọc thực phẩm và ủ khoảng 30 phút cho bột nở gấp đôi."
+      },
+      {
+        "title": "Tạo hình bánh mì",
+        "description": "Lấy bột ra mặt phẳng sạch, nhồi sơ để ép hết bọt khí ra ngoài. Chia bột thành từng phần nhỏ khoảng 50g, vê tròn. Cán từng viên bột dài ra rồi cuộn tròn chặt tay, túm nhọn hai đầu giống ổ bánh mì mini. Dùng dao lam hoặc dao sắc khía các đường chéo nhẹ lên mặt bánh và xếp theo thứ tự."
+      },
+      {
+        "title": "Chiên bánh mì",
+        "description": "Đun nóng chảo dầu ở mức nhiệt ổn định khoảng 170 độ C. Thả bánh vào chảo theo thứ tự đã tạo hình từ trước, đảo trở đều tay cho bánh chín nở phồng và vàng đều các mặt. Vớt bánh ra rây kim loại cho ráo bớt dầu rồi thưởng thức nóng cùng sữa đặc."
+      }
+    ],
+    "tips": [
+      "Dùng bột mì chuyên dụng làm bánh mì (hàm lượng protein cao) để bánh có độ dai xốp và khi nguội không bị xẹp ruột.",
+      "Nhiệt độ dầu chiên lý tưởng là 170 độ C; chiên dầu quá nguội bánh sẽ ngấm dầu gây ngấy, chiên lửa quá lớn vỏ sẽ cháy trước khi ruột chín đều."
+    ],
+    "published": true,
+    "updatedAt": "2026-10-19"
   }
 ]
