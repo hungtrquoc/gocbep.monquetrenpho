@@ -1617,5 +1617,56 @@
     ],
     "published": true,
     "updatedAt": "2026-10-12"
+  },
+  {
+    "slug": "oc-buou-sot-thai-chua-cay-cham-com-me",
+    "videoId": "fEGQsQFfD0w",
+    "title": "Ốc Bươu Sốt Thái Chua Cay Chấm Cơm Mẻ",
+    "excerpt": "Ốc bươu sốt Thái với thịt ốc giòn ngọt ngập trong nước sốt chua cay đậm đà, thơm lừng hương sả và lá quế. Chấm cùng chén cơm mẻ sả ớt cay nồng tạo nên hương vị khó quên.",
+    "coverImage": "https://i.ytimg.com/vi/fEGQsQFfD0w/hqdefault.jpg",
+    "category": "Bánh & Ăn vặt",
+    "keywords": [
+      "cách làm ốc bươu sốt thái",
+      "ốc bươu hấp thái",
+      "nước chấm cơm mẻ sả ớt"
+    ],
+    "servings": "3-4 người ăn",
+    "prepTime": "2 giờ (tính thời gian ngâm ốc)",
+    "cookTime": "20 phút",
+    "ingredients": [
+      "1.5kg ốc bươu sống",
+      "1 gói xốt gia vị hoàn chỉnh lẩu Thái Barona (180g)",
+      "200ml cơm mẻ xay nhuyễn",
+      "5 cây sả (cắt lát và băm nhuyễn)",
+      "5 quả ớt hiểm (cắt lát và băm nhỏ)",
+      "3 củ hành tím băm",
+      "1 nắm lá chanh tươi",
+      "1 nắm rau húng quế",
+      "Gia vị: giấm trắng, đường cát, muối tinh, nước mắm, dầu ăn"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế và làm sạch ốc",
+        "description": "Cho ốc bươu vào thau ngập nước, thêm ớt cắt lát và giấm trắng rồi dùng rổ đè lên ngâm trong khoảng 2 tiếng để ốc nhả sạch bùn nhớt. Rửa và chà xát lại nhiều lần dưới vòi nước sạch rồi vớt ra để ráo."
+      },
+      {
+        "title": "Nấu nước sốt Thái",
+        "description": "Đặt nồi lên bếp, đun nóng 2 muỗng canh dầu ăn rồi cho hành tím và sả băm vào phi thơm. Đổ vào khoảng 1.2 đến 1.5 lít nước lọc, trút gói sốt lẩu Thái vào khuấy đều, nêm thêm đường cho vừa khẩu vị rồi nấu sôi bùng."
+      },
+      {
+        "title": "Pha nước chấm cơm mẻ",
+        "description": "Cho cơm mẻ vào tô, thêm muối và đường rồi khuấy tan hoàn toàn. Cho tiếp sả băm và ớt băm nhuyễn vào trộn đều, có thể nêm thêm chút nước mắm tùy theo khẩu vị."
+      },
+      {
+        "title": "Nấu ốc với sốt Thái",
+        "description": "Đun nóng dầu ăn trong chảo sâu lòng, phi thơm sả cắt lát và ớt rồi trút toàn bộ ốc vào xào lửa lớn. Thêm lá chanh vò sơ và đổ nước sốt Thái đã nấu vào ngập ốc, đậy nắp đun sôi cho ốc chín tới. Mở nắp đảo đều, thả rau húng quế vào rồi tắt bếp."
+      }
+    ],
+    "tips": [
+      "Ngâm ốc với chút giấm trắng và ớt tươi là cách nhanh nhất để ốc nhả sạch nhớt và bùn đất bên trong.",
+      "Không nên nấu ốc quá lâu trên lửa sau khi sôi vì sẽ làm thịt ốc bị dai và teo lại."
+    ],
+    "published": true,
+    "updatedAt": "2026-10-19"
   }
 ]
