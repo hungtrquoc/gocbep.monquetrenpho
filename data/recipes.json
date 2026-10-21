@@ -1834,5 +1834,61 @@
     ],
     "published": true,
     "updatedAt": "2026-10-19"
+  },
+  {
+    "slug": "banh-khoai-mon-hap-nuoc-cot-dua-beo-bui",
+    "videoId": "2tjMisIVmsA",
+    "title": "Bánh Khoai Môn Hấp Nước Cốt Dừa Béo Bùi",
+    "excerpt": "Món bánh khoai môn hấp dẻo mềm với màu tím lá cẩm đẹp mắt, từng lớp khoai bùi bùi quyện cùng vị nước cốt dừa béo ngậy. Một món bánh dân dã cực kỳ thích hợp cho những buổi xế chiều quây quần bên người thân.",
+    "coverImage": "https://i.ytimg.com/vi/2tjMisIVmsA/hqdefault.jpg",
+    "category": "Bánh & Ăn vặt",
+    "keywords": [
+      "bánh khoai môn",
+      "cách làm bánh khoai môn",
+      "bánh khoai môn nước cốt dừa",
+      "món ăn vặt dễ làm"
+    ],
+    "servings": "4-5 người ăn",
+    "prepTime": "25 phút",
+    "cookTime": "60 phút",
+    "ingredients": [
+      "500g khoai môn (đã gọt vỏ)",
+      "230g bột năng",
+      "75g bột gạo",
+      "120g đường",
+      "270ml nước cốt dừa (chia phần trộn bột và phủ mặt)",
+      "150ml nước lá cẩm",
+      "1/2 muỗng cà phê muối",
+      "Phần nước cốt dừa chan: 200ml nước cốt dừa, 1 muỗng cà phê bột năng, 1 muỗng cà phê bột gạo, 1 muỗng canh đường, 1 nhúm muối",
+      "Đậu phộng rang giã dập"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế khoai môn",
+        "description": "Khoai môn sau khi gọt vỏ sạch, dùng dao bào thành từng lát mỏng dài để khi hấp tạo thành lớp đẹp mắt."
+      },
+      {
+        "title": "Pha bột lá cẩm và trộn khoai",
+        "description": "Trộn 200g bột năng, 45g bột gạo, 90g đường, xíu muối, 150ml nước cốt dừa và 150ml nước lá cẩm. Khuấy đều cho tan bột rồi trút khoai môn đã bào vào trộn đều."
+      },
+      {
+        "title": "Pha lớp bột mặt nước cốt dừa",
+        "description": "Trộn 30g bột năng, 30g bột gạo, 30g đường, xíu muối và 120ml nước cốt dừa, khuấy tan rồi lọc qua rây cho mịn."
+      },
+      {
+        "title": "Hấp bánh",
+        "description": "Quét một lớp dầu mỏng vào khuôn. Xếp từng lớp khoai môn xen kẽ lớp bột vào khuôn rồi cho vào nồi hấp khi nước đã sôi già trong khoảng 35-40 phút. Sau đó đổ phần bột cốt dừa trắng lên mặt, đậy nắp hấp thêm 15 phút cho bánh chín hoàn toàn."
+      },
+      {
+        "title": "Nấu sốt cốt dừa và hoàn thành",
+        "description": "Hòa nước cốt dừa, chút bột năng, bột gạo, đường và muối trong nồi nhỏ, đun lửa nhỏ đến khi sốt sánh lại. Bánh sau khi nguội hẳn thì lấy ra khỏi khuôn, cắt miếng vừa ăn, chan nước cốt dừa và rắc đậu phộng rang lên trên."
+      }
+    ],
+    "tips": [
+      "Phải đợi nước trong nồi sôi bốc hơi mạnh mới đặt khuôn bánh vào hấp để bánh chín đều và không bị sượng.",
+      "Bánh cần để nguội hoàn toàn trước khi cắt thì lát bánh mới sắc nét, không bị dính dao hay nát vụn."
+    ],
+    "published": true,
+    "updatedAt": "2026-10-21"
   }
 ]
