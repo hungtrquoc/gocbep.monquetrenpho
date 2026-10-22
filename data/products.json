@@ -106,5 +106,21 @@
       "canh-ga-chien-nuoc-mam-nhanh-gon-chuan-vi",
       "rau-cau-khoai-mon-soi-gion-khong-tach-lop"
     ]
+  },
+  {
+    "slug": "shopee-viet-nam-hot-deals-best-prices-2",
+    "name": "Shopee Việt Nam | Hot Deals, Best Prices",
+    "image": "https://down-zl-vn.img.susercontent.com/sg-11134201-7rcf5-m65sd102sr7k1c.webp",
+    "price": "",
+    "description": "",
+    "affiliateUrl": "https://s.shopee.vn/5q98ckWU3l",
+    "category": "Nguyên liệu & Gia vị",
+    "platform": "Shopee",
+    "relatedRecipeSlugs": [
+      "banh-cuon-trang-noi-hoi-vo-mong-dai-nhan-thit-nam",
+      "banh-gio-lam-o-nha-ngon-re-hon-ngoai-tiem",
+      "banh-khoai-mon-hap-nuoc-cot-dua-beo-bui",
+      "meo-nho-nhung-giup-lam-banh-bot-loc-cuc-don-gian"
+    ]
   }
 ]
