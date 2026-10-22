@@ -109,7 +109,7 @@
   },
   {
     "slug": "shopee-viet-nam-hot-deals-best-prices-2",
-    "name": "Shopee Việt Nam | Hot Deals, Best Prices",
+    "name": "Bột bắp, bột gạo, bột nếp, bột chiên, bột năng, bột bánh cuốn, bột bánh xèo, bột chiên xù Các Loại",
     "image": "https://down-zl-vn.img.susercontent.com/sg-11134201-7rcf5-m65sd102sr7k1c.webp",
     "price": "",
     "description": "",
@@ -117,10 +117,15 @@
     "category": "Nguyên liệu & Gia vị",
     "platform": "Shopee",
     "relatedRecipeSlugs": [
+      "banh-bo-thot-not-hap-nuoc-cot-dua",
       "banh-cuon-trang-noi-hoi-vo-mong-dai-nhan-thit-nam",
       "banh-gio-lam-o-nha-ngon-re-hon-ngoai-tiem",
+      "banh-khoai-lang-phomai-sieu-thom",
       "banh-khoai-mon-hap-nuoc-cot-dua-beo-bui",
-      "meo-nho-nhung-giup-lam-banh-bot-loc-cuc-don-gian"
+      "bi-quyet-lam-soi-banh-canh",
+      "ca-chien-gion-rang-muoi-la-lot-thom-lung",
+      "meo-nho-nhung-giup-lam-banh-bot-loc-cuc-don-gian",
+      "uc-ga-cuon-rong-bien"
     ]
   }
 ]
