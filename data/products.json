@@ -83,7 +83,7 @@
   },
   {
     "slug": "set-3-goi-gia-vi-ga-chien-nuoc-mam-goi-80g-sot-uop-ga-chien-nuoc-mam-sot-ga-mam",
-    "name": "[SET 3 GÓI] Gia Vị Gà Chiên Nước Mắm (Gói 80g) – Sốt Ướp Gà Chiên Nước Mắm, Sốt Gà Mắm",
+    "name": "Gia Vị Gà Chiên Nước Mắm (Gói 80g) – Sốt Ướp Gà Chiên Nước Mắm, Sốt Gà Mắm",
     "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-820l4-mf7yuspbaz9n57.webp",
     "price": "",
     "description": "",
@@ -91,6 +91,7 @@
     "category": "Nguyên liệu & Gia vị",
     "platform": "Shopee",
     "relatedRecipeSlugs": [
+      "bun-cha-ha-noi-bang-noi-chien-khong-dau",
       "canh-ga-chien-nuoc-mam-nhanh-gon-chuan-vi"
     ]
   },
