@@ -69,17 +69,14 @@
   },
   {
     "slug": "shopee-viet-nam-hot-deals-best-prices",
-    "name": "Shopee Việt Nam | Hot Deals, Best Prices",
+    "name": "Mắm nêm sạch Làng Chài Xưa 310g - Mắm nêm cốt thơm ngon ăn bún, gỏi cuốn rất ngon",
     "image": "https://down-bs-vn.img.susercontent.com/vn-11134207-81ztc-mr5tx4f5ul8l5c.webp",
     "price": "",
     "description": "",
     "affiliateUrl": "https://s.shopee.vn/6fhyDDTlRZ",
     "category": "Nguyên liệu & Gia vị",
     "platform": "Shopee",
-    "relatedRecipeSlugs": [
-      "bun-ca-ro-phi-nau-don-gian",
-      "bun-cha-ha-noi-bang-noi-chien-khong-dau"
-    ]
+    "relatedRecipeSlugs": []
   },
   {
     "slug": "set-3-goi-gia-vi-ga-chien-nuoc-mam-goi-80g-sot-uop-ga-chien-nuoc-mam-sot-ga-mam",
