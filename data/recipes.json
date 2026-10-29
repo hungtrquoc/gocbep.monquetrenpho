@@ -1945,5 +1945,61 @@
     ],
     "published": true,
     "updatedAt": "2026-10-29"
+  },
+  {
+    "slug": "dui-ga-chien-gion-rum-tai-nha-chuan-vi-kfc",
+    "videoId": "pahhts-ktuY",
+    "title": "Đùi Gà Chiên Giòn Rụm Tại Nhà Chuẩn Vị KFC",
+    "excerpt": "Món đùi gà chiên giòn với lớp vỏ vảy xù giòn tan bọc lấy phần thịt gà mềm ẩm, thơm lừng vị sữa tươi. Cách làm cực kỳ đơn giản và nhanh gọn cho bữa ăn gia đình.",
+    "coverImage": "https://i.ytimg.com/vi/pahhts-ktuY/hqdefault.jpg",
+    "category": "Món chính",
+    "keywords": [
+      "cách làm gà chiên giòn",
+      "đùi gà chiên xù",
+      "công thức gà rán kfc",
+      "món ngon từ thịt gà"
+    ],
+    "servings": "3-4 người ăn",
+    "prepTime": "40 phút",
+    "cookTime": "20 phút",
+    "ingredients": [
+      "8-10 cái đùi gà công nghiệp",
+      "200g bột chiên gà giòn (pha ướt)",
+      "200g bột chiên gà giòn (lớp phủ khô)",
+      "2 quả trứng gà",
+      "200ml sữa tươi không đường",
+      "1 củ gừng nhỏ, vài nhánh hành lá",
+      "1 thìa cà phê tiêu xay",
+      "Dầu ăn để chiên ngập dầu"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế và chần gà",
+        "description": "Đùi gà rửa sạch. Bắc nồi nước sôi cùng gừng đập dập và hành lá, cho gà vào chần sơ khoảng 3-5 phút rồi vớt ra để ráo nước."
+      },
+      {
+        "title": "Ướp đùi gà",
+        "description": "Cho đùi gà vào âu lớn cùng 2 quả trứng gà, sữa tươi không đường và tiêu xay. Trộn đều và để ngấm trong tủ lạnh từ 30-60 phút."
+      },
+      {
+        "title": "Chuẩn bị bột",
+        "description": "Gắp đùi gà ra đĩa. Lấy 250ml nước ướp sữa trứng hòa cùng 200g bột chiên giòn và 100ml nước lọc tạo thành hỗn hợp bột sệt. Chuẩn bị thêm một khay bột chiên khô riêng biệt."
+      },
+      {
+        "title": "Áo bột tạo vảy",
+        "description": "Lăn đùi gà qua lớp bột khô mỏng trước. Khi chuẩn bị chiên, nhúng đùi gà vào tô bột ướt rồi lăn lại qua khay bột khô để tạo vân vảy xù."
+      },
+      {
+        "title": "Chiên giòn",
+        "description": "Đun nóng nhiều dầu ăn. Nhúng gà xong gắp vào chảo, giữ nhẹ và lắc nhẹ đùi gà trong dầu khoảng 1 phút cho định hình lớp vảy rồi thả ra chiên vàng đều hai mặt."
+      }
+    ],
+    "tips": [
+      "Luộc sơ đùi gà trước giúp rút ngắn thời gian chiên và giữ cho thịt bên trong mọng nước, không bị sống ở phần xương.",
+      "Lắc nhẹ đùi gà trong dầu sôi trước khi thả hoàn toàn xuống chảo để tạo lớp vảy xù giòn xốp đẹp mắt.",
+      "Muốn gà giòn lâu hơn có thể chiên 2 lần: lần một chín 70%, lần hai chiên lửa lớn nhanh 1-2 phút trước khi ăn."
+    ],
+    "published": true,
+    "updatedAt": "2026-10-29"
   }
 ]
