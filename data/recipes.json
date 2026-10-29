@@ -1890,5 +1890,60 @@
     ],
     "published": true,
     "updatedAt": "2026-10-21"
+  },
+  {
+    "slug": "bo-kho-tien-loi-bang-xot-gia-vi-hoan-chinh",
+    "videoId": "BHk6-7xPaj4",
+    "title": "Bò Kho Tiện Lợi Bằng Xốt Gia Vị Hoàn Chỉnh",
+    "excerpt": "Món bò kho thơm lừng, thịt mềm tan kết hợp cùng khoai tây và cà rốt bùi ngọt. Áp dụng mẹo sốc nhiệt bằng đá lạnh giúp tiết kiệm thời gian hầm thịt tối đa.",
+    "coverImage": "https://i.ytimg.com/vi/BHk6-7xPaj4/hqdefault.jpg",
+    "category": "Món chính",
+    "keywords": [
+      "bò kho bánh mì",
+      "cách nấu bò kho ngon",
+      "hủ tiếu bò kho"
+    ],
+    "servings": "5-6 người ăn",
+    "prepTime": "30 phút",
+    "cookTime": "60 phút",
+    "ingredients": [
+      "3kg bắp bò và nạm bò",
+      "6 gói xốt gia vị hoàn chỉnh bò kho",
+      "3 củ khoai tây gọt vỏ",
+      "3 củ cà rốt",
+      "1 củ hành tây",
+      "5 cây sả đập dập",
+      "1 củ gừng, củ hành tím, tỏi băm",
+      "1 tô đá lạnh",
+      "Gia vị: hạt nêm, muối, đường, sữa đặc (tùy thích)"
+    ],
+    "steps": [
+      {
+        "title": "Sơ chế thịt bò",
+        "description": "Nấu nồi nước sôi cùng sả, gừng, hành tím và xíu muối, cho thịt bò vào chần sơ khử mùi. Vớt ra rửa sạch, để ráo rồi thái miếng vuông vừa ăn."
+      },
+      {
+        "title": "Ướp thịt bò",
+        "description": "Cho thịt bò vào thau cùng hành tỏi băm và các gói xốt bò kho. Trộn đều và ướp ít nhất 1 tiếng cho thấm vị."
+      },
+      {
+        "title": "Nấu thịt bò và sốc nhiệt",
+        "description": "Phi thơm hành, tỏi, sả trong nồi lớn, cho thịt bò vào xào thật săn. Đổ nước ngập mặt thịt rồi đun sôi. Khi nước sôi bùng, đổ một tô đá lạnh vào để tạo sốc nhiệt giúp thớ thịt mau mềm, sau đó hạ lửa đun tiếp."
+      },
+      {
+        "title": "Sơ chế và xào rau củ",
+        "description": "Cắt tỉa khoai tây, cà rốt thành miếng vừa ăn. Cho vào chảo xào sơ với chút dầu ăn để khi hầm không bị nát."
+      },
+      {
+        "title": "Hoàn thiện món ăn",
+        "description": "Khi thịt bò mềm vừa tới, trút rau củ vào nồi. Nêm thêm hạt nêm, đường, muối cho vừa khẩu vị, có thể cho thêm chút sữa đặc để tạo độ béo ngậy. Nấu chín mềm rau củ rồi thêm hành tây và ngò rí là hoàn thành."
+      }
+    ],
+    "tips": [
+      "Xào sơ khoai tây và cà rốt với dầu trước khi cho vào nồi hầm giúp rau củ giữ nguyên khối, không bị rã nát trong nước sốt.",
+      "Thả đá lạnh vào giữa lúc nước đang sôi bùng giúp thớ thịt bò co giãn đột ngột, làm mềm thịt nhanh hơn mà không cần hầm quá lâu."
+    ],
+    "published": true,
+    "updatedAt": "2026-10-29"
   }
 ]
