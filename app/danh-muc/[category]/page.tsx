@@ -53,7 +53,7 @@ export default async function CategoryPage({
 
       <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
-          <h1 className="font-display text-3xl font-bold text-coffee">{category}</h1>
+          <h1 className="text-fluid-xl font-black leading-[1.08] text-ink">{category}</h1>
           <p className="mt-2 text-coffee/60">
             {recipes.length} công thức {category.toLowerCase()} — hướng dẫn chi tiết từng bước.
           </p>

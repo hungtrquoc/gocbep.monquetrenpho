@@ -16,7 +16,7 @@ export default async function VideosPage() {
     <div className="mx-auto max-w-6xl px-4 py-10">
       <div className="mb-8 border-b-2 border-coffee pb-3">
         <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-chili">YouTube</p>
-        <h1 className="mt-1 font-display text-3xl font-bold text-coffee">Video của Góc Bếp</h1>
+        <h1 className="mt-1 text-fluid-xl font-black leading-[1.08] text-ink">Video của Góc Bếp</h1>
         <p className="mt-1 text-sm text-coffee/60">
           Danh sách được lấy tự động từ kênh YouTube Góc Bếp (cập nhật mỗi giờ).
         </p>

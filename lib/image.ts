@@ -9,3 +9,9 @@ export function cardThumb(url: string): string {
   const m = url.match(/^https:\/\/i\.ytimg\.com\/vi(?:_webp)?\/([\w-]+)\//);
   return m ? `https://i.ytimg.com/vi_webp/${m[1]}/mqdefault.webp` : url;
 }
+
+/** Ảnh lớn hơn cho ô nổi bật (480x360 WebP của YouTube). */
+export function largeThumb(url: string): string {
+  const m = url.match(/^https:\/\/i\.ytimg\.com\/vi(?:_webp)?\/([\w-]+)\//);
+  return m ? `https://i.ytimg.com/vi_webp/${m[1]}/hqdefault.webp` : url;
+}

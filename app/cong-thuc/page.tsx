@@ -24,7 +24,7 @@ export default async function RecipesPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <div className="mb-8 text-center">
-        <h1 className="font-display text-3xl font-bold text-coffee">Công thức nấu ăn</h1>
+        <h1 className="text-fluid-xl font-black leading-[1.08] text-ink">Công thức nấu ăn</h1>
         <p className="mt-2 text-coffee/60">
           Hướng dẫn chi tiết từng bước cho các món ăn trong video của Góc Bếp.
         </p>
@@ -36,7 +36,7 @@ export default async function RecipesPage() {
             <Link
               key={category}
               href={`/danh-muc/${CATEGORY_SLUGS[category]}`}
-              className="rounded-full bg-white px-4 py-1.5 text-sm font-medium text-coffee/70 transition hover:bg-turmeric/15"
+              className="rounded-full border border-ink/15 bg-white px-4 py-1.5 text-sm font-bold text-ink transition hover:border-ink hover:bg-ink hover:text-honey active:scale-95"
             >
               {category}
             </Link>

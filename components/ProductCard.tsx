@@ -7,9 +7,9 @@ export default function ProductCard({ product }: { product: Product }) {
       href={product.affiliateUrl}
       target="_blank"
       rel="nofollow sponsored noopener noreferrer"
-      className="group flex flex-col overflow-hidden rounded-2xl border border-turmeric/20 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+      className="card-lift group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white"
     >
-      <div className="relative aspect-square w-full overflow-hidden bg-turmeric/10">
+      <div className="relative aspect-square w-full overflow-hidden bg-paper">
         <Image
           src={product.image}
           alt={product.name}
@@ -21,7 +21,7 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
       <div className="flex flex-1 flex-col gap-1 p-4">
         <div className="flex items-center gap-1.5">
-          <span className="text-xs font-semibold uppercase tracking-wide text-turmeric">
+          <span className="text-[10px] font-black uppercase tracking-[0.14em] text-chili">
             {product.category}
           </span>
           {product.platform && (
@@ -30,15 +30,15 @@ export default function ProductCard({ product }: { product: Product }) {
             </span>
           )}
         </div>
-        <h3 className="line-clamp-2 font-display text-base font-semibold text-coffee">
+        <h3 className="line-clamp-2 text-base font-extrabold text-ink">
           {product.name}
         </h3>
         <p className="line-clamp-2 text-sm text-coffee/70">{product.description}</p>
         <div className="mt-auto flex items-center justify-between pt-3">
           {product.price && (
-            <span className="font-display font-semibold text-chili">{product.price}</span>
+            <span className="bg-honey px-1.5 font-black text-ink">{product.price}</span>
           )}
-          <span className="text-sm font-semibold text-chili group-hover:underline">
+          <span className="text-sm font-extrabold text-ink transition group-hover:translate-x-1">
             Mua ngay →
           </span>
         </div>

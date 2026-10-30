@@ -15,7 +15,7 @@ export default function TermsPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-14">
-      <h1 className="font-display text-3xl font-bold text-coffee">Điều khoản sử dụng</h1>
+      <h1 className="text-fluid-xl font-black leading-[1.08] text-ink">Điều khoản sử dụng</h1>
       <p className="mt-2 text-sm text-coffee/60">Cập nhật lần cuối: {updated}</p>
 
       <div className="mt-8 space-y-6 text-base leading-relaxed text-coffee/90">

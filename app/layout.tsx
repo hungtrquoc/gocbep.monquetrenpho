@@ -1,27 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Be_Vietnam_Pro, Lora } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { CHANNEL_URL } from "@/lib/youtube";
 
-// Font tự host qua next/font: không chặn render, không nháy chữ (FOUT), có
-// subset tiếng Việt - thay cho @import url(fonts.googleapis.com) cũ trong CSS.
-const beVietnam = Be_Vietnam_Pro({
-  subsets: ["latin", "vietnamese"],
-  weight: ["400", "600", "700"],
-  display: "swap",
-  variable: "--font-be-vietnam",
-});
-
-// Chữ có chân (serif) cho tiêu đề - phong cách tạp chí ẩm thực; thân bài dùng Be Vietnam Pro.
-const lora = Lora({
-  subsets: ["latin", "vietnamese"],
-  weight: ["600", "700"],
-  display: "swap",
-  variable: "--font-lora",
-});
+// Font Be Vietnam Pro TỰ HOST trong /public/fonts (khai báo @font-face ở globals.css, chia
+// theo bảng chữ nên chỉ tải phần cần): không phụ thuộc Google Fonts lúc build/chạy.
 
 const SITE_URL = "https://gocbep.vercel.app";
 const SITE_NAME = "Góc Bếp";
@@ -71,7 +56,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#FFF8EC",
+  themeColor: "#0E0E0C",
   width: "device-width",
   initialScale: 1,
 };
@@ -104,12 +89,16 @@ export default function RootLayout({
   const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
   return (
-    <html lang="vi" className={`${beVietnam.variable} ${lora.variable}`}>
+    <html lang="vi">
       <head>
         {/* Ảnh thumbnail (LCP) nằm ở i.ytimg.com: mở sẵn kết nối DNS+TLS ngay từ đầu,
             tiết kiệm ~0.5-1s trên mạng chậm. */}
         <link rel="preconnect" href="https://i.ytimg.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
+        <noscript>
+          <style>{`[data-reveal]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
+        <link rel="preload" href="/fonts/be-vietnam-pro-vietnamese-900-normal.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <script

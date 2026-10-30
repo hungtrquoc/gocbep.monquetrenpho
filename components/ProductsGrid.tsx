@@ -22,7 +22,7 @@ export default function ProductsGrid({ products }: { products: Product[] }) {
             type="button"
             onClick={() => setActive("all")}
             className={`rounded-full px-4 py-1.5 text-sm font-medium transition ${
-              active === "all" ? "bg-chili text-white" : "bg-white text-coffee/70 hover:bg-turmeric/15"
+              active === "all" ? "bg-ink text-honey" : "border border-ink/15 bg-white text-ink hover:border-ink"
             }`}
           >
             Tất cả
@@ -33,7 +33,7 @@ export default function ProductsGrid({ products }: { products: Product[] }) {
               type="button"
               onClick={() => setActive(category)}
               className={`rounded-full px-4 py-1.5 text-sm font-medium transition ${
-                active === category ? "bg-chili text-white" : "bg-white text-coffee/70 hover:bg-turmeric/15"
+                active === category ? "bg-ink text-honey" : "border border-ink/15 bg-white text-ink hover:border-ink"
               }`}
             >
               {category}

@@ -19,7 +19,7 @@ export default function AboutPage() {
           height={120}
           className="rounded-full shadow-md ring-4 ring-white"
         />
-        <h1 className="mt-6 font-display text-3xl font-bold text-coffee">
+        <h1 className="mt-6 text-fluid-xl font-black leading-[1.08] text-ink">
           Về Góc Bếp
         </h1>
       </div>

@@ -15,7 +15,7 @@ export default function ProductsPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10">
       <div className="mb-10 text-center">
-        <h1 className="font-display text-3xl font-bold text-coffee">Sản phẩm Góc Bếp gợi ý</h1>
+        <h1 className="text-fluid-xl font-black leading-[1.08] text-ink">Sản phẩm Góc Bếp gợi ý</h1>
         <p className="mx-auto mt-2 max-w-xl text-coffee/60">
           Những dụng cụ, nguyên liệu Góc Bếp dùng trong video, chọn lại cho anh/chị.
         </p>
